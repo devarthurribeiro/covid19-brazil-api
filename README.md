@@ -1,4 +1,7 @@
-<h1 align="center">📊 COVID-19 Brazil API</h1>
+<h1 align="center">
+  <img src="/public/logo.svg" width="90px"/>
+</h1>
+<h1 align="center">COVID-19 Brazil API</h1>
 <p align="center">
   <strong>Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil</strong>
 </p>
