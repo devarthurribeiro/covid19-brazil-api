@@ -10,7 +10,7 @@
 
 Fornecer um API json com dados atualizados sobre avanço do coronavírus Brasil.
 
-## Rodadno projeto
+## Rodando o projeto
 
 Servidor de desenvolvimento
 
