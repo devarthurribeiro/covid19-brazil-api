@@ -4,14 +4,16 @@ const Home = () => (
   <div className="container">
     <Head>
       <title>COVID-19 Brazil API</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/logo.svg" />
     </Head>
 
     <main>
-      <h1 className="title">
-        📊 COVID-19 Brazil API
-      </h1>
-
+      <div className="grid">
+        <h1 className="title">
+          COVID-19 Brazil API
+        </h1>
+        <img src="/logo.svg" width="100px" className="logo" />
+      </div>
       <p className="description">
         Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil.
       </p>
@@ -65,6 +67,20 @@ const Home = () => (
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+
+      .logo {
+        margin-left: 16px;
+        animation: rotation 20s infinite linear;
+      }
+
+      @keyframes rotation {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(359deg);
+        }
       }
 
       main {
@@ -125,6 +141,7 @@ const Home = () => (
       .description {
         line-height: 1.5;
         font-size: 1.5rem;
+        color: #818181;
       }
 
       code {
@@ -147,13 +164,14 @@ const Home = () => (
       }
 
       .card {
+        background-color: #0a0a0a;
         margin: 1rem;
         flex-basis: 45%;
         padding: 1.5rem;
         text-align: left;
         color: inherit;
         text-decoration: none;
-        border: 1px solid #eaeaea;
+        border: 1px solid #818181;
         border-radius: 10px;
         transition: color 0.15s ease, border-color 0.15s ease;
       }
@@ -161,8 +179,8 @@ const Home = () => (
       .card:hover,
       .card:focus,
       .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
+        color: #4ffa7b;
+        border-color: #4ffa7b;
       }
 
       .card h3 {
@@ -187,6 +205,8 @@ const Home = () => (
     <style jsx global>{`
       html,
       body {
+        background-color: #000;
+        color: #e5e5e5;
         padding: 0;
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
