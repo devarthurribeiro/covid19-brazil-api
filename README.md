@@ -21,7 +21,60 @@ Visite [http://localhost:3000](http://localhost:3000) com o seu navegador para v
 
 ## Endpoints
 
-TODO
+#### Consulta dados de casos por estado
+
+```json
+// GET https://covid19-brazil-api.now.sh/api/report/v1
+
+{
+"data": [
+    {
+      "id": 20,
+      "uid": 35,
+      "uf": "SP",
+      "state": "São Paulo",
+      "cases": 164,
+      "deaths": 1,
+      "suspects": 5047,
+      "refuses": 709,
+      "broadcast": "true",
+      "comments": "Transmissão comunitária no município de São Paulo.",
+      "created_at": "2020-03-17 14:45:18",
+      "updated_at": "2020-03-18 12:32:00"
+    },
+    {
+      "id": 19,
+      "uid": 33,
+      "uf": "RJ",
+      "state": "Rio de Janeiro",
+      "cases": 33,
+      "deaths": 0,
+      "suspects": 859,
+      "refuses": 194,
+      "broadcast": "true",
+      "comments": "Transmissão comunitária no município do Rio de Janeiro",
+      "created_at": "2020-03-17 14:45:18",
+      "updated_at": "2020-03-18 12:32:00"
+    }
+    //...
+    ]
+}
+```
+
+### Status da api
+```json
+// GET https://covid19-brazil-api.now.sh/api/status/v1
+
+{
+  "status": "ok",
+  "date": "2020-03-18T12:37:59.227Z",
+  "environment": "production",
+  "aws": {
+    "region": "us-west-1",
+    "function_version": "$LATEST"
+  }
+}
+```
 
 ## Contribuidores
 
