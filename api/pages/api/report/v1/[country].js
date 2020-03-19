@@ -11,14 +11,15 @@ async function Report (request, response) {
   const jsonDataset = JSON.parse(dataset);
 
   if (jsonDataset.features.length > 0) {
-    const brazilData = jsonDataset.features[0].attributes
+    const country = jsonDataset.features[0].attributes
     response.json({
       data: {
-        country: brazilData.Country_Region,
-        cases: brazilData.Active,
-        deaths: brazilData.Deaths,
-        recovered: brazilData.Recovered,
-        updated_at: new Date(brazilData.Last_Update)
+        country: country.Country_Region,
+        cases: country.Active,
+        confirmed: country.Confirmed,
+        deaths: country.Deaths,
+        recovered: country.Recovered,
+        updated_at: new Date(country.Last_Update)
       }
     });
   } else {

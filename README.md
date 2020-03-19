@@ -69,6 +69,7 @@ https://covid19-brazil-api.now.sh
     {
       "country": "Brazil",
       "cases": 523,
+      "confirmed": 529,
       "deaths": 4,
       "recovered": 2,
       "updated_at": "2020-03-19T02:53:32.000Z"
@@ -88,6 +89,7 @@ https://covid19-brazil-api.now.sh
   "data": {
     "country": "Brazil",
     "cases": 523,
+    "confirmed": 529,
     "deaths": 4,
     "recovered": 2,
     "updated_at": "2020-03-19T02:53:32.000Z"
@@ -111,7 +113,7 @@ https://covid19-brazil-api.now.sh
 }
 ```
 
-## Autor 
+## Autor
 
 <table>
   <tr>

@@ -15,6 +15,7 @@ async function Report (request, response) {
       return {
         country: attributes.Country_Region,
         cases: attributes.Active,
+        confirmed: attributes.Confirmed,
         deaths: attributes.Deaths,
         recovered: attributes.Recovered,
         updated_at: new Date(attributes.Last_Update)
