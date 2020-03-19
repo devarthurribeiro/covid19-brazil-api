@@ -8,7 +8,7 @@
 
 ## Motivo 🤔
 
-Fornecer um API json com dados atualizados sobre avanço do coronavírus Brasil.
+Fornecer um API json com dados atualizados sobre avanço do coronavírus Brasil. Assim como em outros países.
 
 ## Datasets 💽
 
@@ -29,7 +29,7 @@ Visite [http://localhost:3000](http://localhost:3000) com o seu navegador para v
 
 ## Endpoints 🔌
 
-Todas chamas devem usar como a url
+Todas chamas devem usar a url base:
 
 ```
 https://covid19-brazil-api.now.sh
