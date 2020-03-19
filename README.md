@@ -56,7 +56,7 @@ https://covid19-brazil-api.now.sh
 }
 ```
 
-### Status da api
+#### Status da api
 ```
 // GET /api/status/v1
 
