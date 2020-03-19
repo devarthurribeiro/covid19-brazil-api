@@ -6,16 +6,16 @@
   <strong>Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil</strong>
 </p>
 
-## Motivo
+## Motivo 🤔
 
 Fornecer um API json com dados atualizados sobre avanço do coronavírus Brasil.
 
-## Datasets
+## Datasets 💽
 
 - [CSSEGISandData](https://github.com/CSSEGISandData/COVID-19)
 - [Ministério da Saúde](http://plataforma.saude.gov.br/novocoronavirus)
 
-## Rodando o projeto
+## Rodando o projeto 🚀
 
 Servidor de desenvolvimento
 
@@ -27,7 +27,7 @@ yarn dev
 
 Visite [http://localhost:3000](http://localhost:3000) com o seu navegador para ver o resultado.
 
-## Endpoints
+## Endpoints 🔌
 
 Todas chamas devem usar como a url
 
@@ -111,9 +111,7 @@ https://covid19-brazil-api.now.sh
 }
 ```
 
-## Contribuidores
-
-## Autores
+## Autor 
 
 <table>
   <tr>
