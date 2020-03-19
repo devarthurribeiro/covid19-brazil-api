@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/public/logo.svg" width="90px" float="center"/>
+  <img src="/api/public/logo.svg" width="90px" float="center"/>
 </p>
 <h1 align="center">COVID-19 Brazil API</h1>
 <p align="center">
@@ -43,8 +43,8 @@ https://covid19-brazil-api.now.sh
 {
 "data": [
     {
-      "id": 20,
       "uid": 35,
+      "datetime": "2020-03-18T20:00:00.000Z",
       "uf": "SP",
       "state": "São Paulo",
       "cases": 164,
@@ -53,8 +53,6 @@ https://covid19-brazil-api.now.sh
       "refuses": 709,
       "broadcast": "true",
       "comments": "Transmissão comunitária no município de São Paulo.",
-      "created_at": "2020-03-17 14:45:18",
-      "updated_at": "2020-03-18 12:32:00"
     }
     //...
    ]
