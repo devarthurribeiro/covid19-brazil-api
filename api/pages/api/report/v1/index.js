@@ -5,11 +5,11 @@ import fetchData from '../../../../util/fetchData'
 
 async function Report (request, response) {
   response.status(200);
-  const dataset = await fetchData(process.env.DATA_URL);
+  const dataset = await fetchData(process.env.baseUrlMs);
   const jsonDataset = JSON.parse(dataset);
 
   response.json({
-    data: jsonDataset.brazil
+    data: jsonDataset
   });
 }
 
