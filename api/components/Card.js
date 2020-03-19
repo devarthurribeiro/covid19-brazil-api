@@ -3,13 +3,12 @@ function Card (props) {
     <>
       <a href={props.link} className="card">
         <h3>{props.title}</h3>
-        <p>{props.description}</p>
+        {props.description ? (<p>{props.description}</p>) : (<p>{props.children}</p>)}
       </a>
       <style jsx>{`
       .card {
-        min-width: 300px;
+        width: 100%;
         background-color: #0a0a0a;
-        margin: 1rem;
         flex-basis: 45%;
         padding: 1.5rem;
         text-align: left;

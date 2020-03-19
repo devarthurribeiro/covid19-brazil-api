@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
+import axios from 'axios';
 
 import analytic from '../util/analytic.js'
-
 import Card from '../components/Card'
+import CountryCard from '../components/CountryCard'
 
-function Home () {
+
+function Home (props) {
 
   useEffect(() => {
     analytic.pageview('/')
@@ -16,14 +18,14 @@ function Home () {
       <Head>
         <title>COVID-19 Brazil API</title>
         <link rel="icon" href="/favicon.png" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="api, covid19, covid-19, brasil, gratis, json, coronavirus" />
         <meta name="author" content="Arthur Ribeiro, devarthurribeiro@gmail.com" />
         <meta name="description" content="API para notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil." />
       </Head>
 
       <main>
-        <div className="grid">
+        <div className="flex-center">
           <h1 className="title">
             COVID-19 Brazil API
         </h1>
@@ -33,29 +35,46 @@ function Home () {
           Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil.
         </p>
 
+        <h2>Links</h2>
         <div className="grid">
           <Card
             link="https://github.com/devarthurribeiro/covid19-brazil-api/blob/master/README.md"
             title="Documentação &rarr;"
-            description="Veja a doc da api"
+            description="Veja a doc da api 📝"
           />
           <Card
             link="https://coronavirus.saude.gov.br/"
             title="Leia &rarr;"
-            description="Sobre o virus"
+            description="Sobre o vírus 🦠"
           />
           <Card
             link="http://plataforma.saude.gov.br/novocoronavirus/"
             title="Dados &rarr;"
-            description="Ministério da Saúde."
+            description="Ministério da Saúde 🏥"
           />
           <Card
             link="https://github.com/devarthurribeiro"
             title="Autor &rarr;"
-            description="@devarthurribeiro"
+            description="@devarthurribeiro 👨🏻‍💻"
           />
         </div>
-
+        <br />
+        <h2>Acompanhe</h2>
+        <div className="grid">
+          <CountryCard
+            country="brazil"
+          />
+          <CountryCard
+            country="china"
+          />
+          <CountryCard
+            country="italy"
+          />
+          <CountryCard
+            country="us"
+          />
+          <br />
+        </div>
       </main>
 
       <footer>
@@ -71,11 +90,7 @@ function Home () {
       <style jsx>{`
       .container {
         min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0 .75em
       }
 
       .logo {
@@ -93,12 +108,8 @@ function Home () {
       }
 
       main {
-        padding: 1rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
       }
 
       footer {
@@ -108,10 +119,6 @@ function Home () {
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
       }
 
       footer a {
@@ -154,28 +161,37 @@ function Home () {
       }
 
       code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
+        background: #4ffa7b;
+        color: #202124;
+        font-weight: 600;
+        border-radius: 30px;
+        padding: 0.75rem 1em;
         font-size: 1.1rem;
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
           DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
       }
 
-      .grid {
+      .flex-center {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        margin-top: 1rem;
+      }
 
-        max-width: 800px;
-        margin-top: 3rem;
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
       }
 
       @media (max-width: 600px) {
-        .grid {
+        .flex {
           width: 100%;
           flex-direction: column;
+        }
+        .grid {
+          grid-template-columns: 1fr;
         }
       }
     `}</style>
@@ -200,4 +216,4 @@ function Home () {
   )
 }
 
-export default Home
+export default Home;
