@@ -3,7 +3,7 @@ const cors = microCors();
 
 import fetchData from '../../../../util/fetchData'
 
-async function Report (request, response) {
+async function Country (request, response) {
   const country = request.query.country;
 
   response.status(200);
@@ -30,4 +30,4 @@ async function Report (request, response) {
 
 }
 
-export default cors(Report)
+export default cors(Country)

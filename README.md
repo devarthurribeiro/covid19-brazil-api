@@ -62,7 +62,7 @@ https://covid19-brazil-api.now.sh
 #### Consulta dados de casos de todos paises
 
 ```
-// GET /api/report/v1/countrys
+// GET /api/report/v1/countries
 
 {
 "data": [
