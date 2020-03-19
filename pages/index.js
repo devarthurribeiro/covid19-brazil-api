@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head'
 
-import analytic from './utils/analytic.js'
+import analytic from '../util/analytic.js'
 
 function Home () {
 
