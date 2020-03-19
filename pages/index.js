@@ -68,7 +68,7 @@ function Home () {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Feito com 💙 @devarthurribeiro.
+          Feito com 💚
       </a>
       </footer>
 
@@ -83,7 +83,7 @@ function Home () {
       }
 
       .logo {
-        margin-left: 16px;
+        margin: 16px;
         animation: rotation 20s infinite linear;
       }
 
@@ -97,7 +97,7 @@ function Home () {
       }
 
       main {
-        padding: 5rem 0;
+        padding: 2rem 0;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -122,6 +122,7 @@ function Home () {
         display: flex;
         justify-content: center;
         align-items: center;
+        letter-spacing: .2em;
       }
 
       a {
@@ -177,6 +178,7 @@ function Home () {
       }
 
       .card {
+        min-width: 300px;
         background-color: #0a0a0a;
         margin: 1rem;
         flex-basis: 45%;
