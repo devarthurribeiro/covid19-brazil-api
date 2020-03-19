@@ -3,6 +3,8 @@ import Head from 'next/head'
 
 import analytic from '../util/analytic.js'
 
+import Card from '../components/Card'
+
 function Home () {
 
   useEffect(() => {
@@ -32,33 +34,26 @@ function Home () {
       </p>
 
         <div className="grid">
-          <a href="https://github.com/devarthurribeiro/covid19-brazil-api/blob/master/README.md" className="card">
-            <h3>Documentação &rarr;</h3>
-            <p>Veja a doc da api</p>
-          </a>
-
-          <a href="https://coronavirus.saude.gov.br/" className="card">
-            <h3>Leia &rarr;</h3>
-            <p>Sobre o virus</p>
-          </a>
-
-          <a
-            href="http://plataforma.saude.gov.br/novocoronavirus/"
-            className="card"
-          >
-            <h3>Dados &rarr;</h3>
-            <p>Ministério da Saúde.</p>
-          </a>
-
-          <a
-            href="https://github.com/devarthurribeiro"
-            className="card"
-          >
-            <h3>Autor &rarr;</h3>
-            <p>
-              @devarthurribeiro.
-          </p>
-          </a>
+          <Card
+            link="https://github.com/devarthurribeiro/covid19-brazil-api/blob/master/README.md"
+            title="Documentação &rarr;"
+            description="Veja a doc da api"
+          />
+          <Card
+            link="https://coronavirus.saude.gov.br/"
+            title="Leia &rarr;"
+            description="Sobre o virus"
+          />
+          <Card
+            link="http://plataforma.saude.gov.br/novocoronavirus/"
+            title="Dados &rarr;"
+            description="Ministério da Saúde."
+          />
+          <Card
+            link="https://github.com/devarthurribeiro"
+            title="Autor &rarr;"
+            description="@devarthurribeiro"
+          />
         </div>
       </main>
 
@@ -97,7 +92,7 @@ function Home () {
       }
 
       main {
-        padding: 2rem 0;
+        padding: 1rem 0;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -153,7 +148,6 @@ function Home () {
       }
 
       .description {
-        line-height: 1.5;
         font-size: 1.5rem;
         color: #818181;
       }
@@ -175,38 +169,6 @@ function Home () {
 
         max-width: 800px;
         margin-top: 3rem;
-      }
-
-      .card {
-        min-width: 300px;
-        background-color: #0a0a0a;
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #818181;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #4ffa7b;
-        border-color: #4ffa7b;
-      }
-
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
       }
 
       @media (max-width: 600px) {
