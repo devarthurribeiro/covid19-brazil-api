@@ -1,65 +1,78 @@
+import React, { useEffect } from 'react';
 import Head from 'next/head'
 
-const Home = () => (
-  <div className="container">
-    <Head>
-      <title>COVID-19 Brazil API</title>
-      <link rel="icon" href="/logo.svg" />
-    </Head>
+import analytic from './utils/analytic.js'
 
-    <main>
-      <div className="grid">
-        <h1 className="title">
-          COVID-19 Brazil API
+function Home () {
+
+  useEffect(() => {
+    analytic.pageview('/')
+  }, [])
+
+  return (
+    <div className="container">
+      <Head>
+        <title>COVID-19 Brazil API</title>
+        <link rel="icon" href="/logo.svg" />
+
+        <meta name="keywords" content="api, covid19, covid-19, brasil, gratis, json, coronavirus" />
+        <meta name="author" content="Arthur Ribeiro, devarthurribeiro@gmail.com" />
+        <meta name="description" content="API para notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil." />
+      </Head>
+
+      <main>
+        <div className="grid">
+          <h1 className="title">
+            COVID-19 Brazil API
         </h1>
-        <img src="/logo.svg" width="100px" className="logo" />
-      </div>
-      <p className="description">
-        Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil.
+          <img src="/logo.svg" width="100px" className="logo" />
+        </div>
+        <p className="description">
+          Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil.
       </p>
 
-      <div className="grid">
-        <a href="https://github.com/devarthurribeiro/covid19-brazil-api/blob/master/README.md" className="card">
-          <h3>Documentação &rarr;</h3>
-          <p>Veja a doc da api</p>
-        </a>
+        <div className="grid">
+          <a href="https://github.com/devarthurribeiro/covid19-brazil-api/blob/master/README.md" className="card">
+            <h3>Documentação &rarr;</h3>
+            <p>Veja a doc da api</p>
+          </a>
 
-        <a href="https://coronavirus.saude.gov.br/" className="card">
-          <h3>Leia &rarr;</h3>
-          <p>Sobre o virus</p>
-        </a>
+          <a href="https://coronavirus.saude.gov.br/" className="card">
+            <h3>Leia &rarr;</h3>
+            <p>Sobre o virus</p>
+          </a>
 
-        <a
-          href="http://plataforma.saude.gov.br/novocoronavirus/"
-          className="card"
-        >
-          <h3>Dados &rarr;</h3>
-          <p>Ministério da Saúde.</p>
-        </a>
+          <a
+            href="http://plataforma.saude.gov.br/novocoronavirus/"
+            className="card"
+          >
+            <h3>Dados &rarr;</h3>
+            <p>Ministério da Saúde.</p>
+          </a>
 
+          <a
+            href="https://github.com/devarthurribeiro"
+            className="card"
+          >
+            <h3>Autor &rarr;</h3>
+            <p>
+              @devarthurribeiro.
+          </p>
+          </a>
+        </div>
+      </main>
+
+      <footer>
         <a
           href="https://github.com/devarthurribeiro"
-          className="card"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <h3>Autor &rarr;</h3>
-          <p>
-            @devarthurribeiro.
-          </p>
-        </a>
-      </div>
-    </main>
-
-    <footer>
-      <a
-        href="https://github.com/devarthurribeiro"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Feito com 💙 @devarthurribeiro.
+          Feito com 💙 @devarthurribeiro.
       </a>
-    </footer>
+      </footer>
 
-    <style jsx>{`
+      <style jsx>{`
       .container {
         min-height: 100vh;
         padding: 0 0.5rem;
@@ -202,7 +215,7 @@ const Home = () => (
       }
     `}</style>
 
-    <style jsx global>{`
+      <style jsx global>{`
       html,
       body {
         background-color: #000;
@@ -217,7 +230,9 @@ const Home = () => (
         box-sizing: border-box;
       }
     `}</style>
-  </div>
-)
+
+    </div>
+  )
+}
 
 export default Home
