@@ -38,19 +38,9 @@ function Home (props) {
         <h2>Links</h2>
         <div className="grid">
           <Card
-            link="https://github.com/devarthurribeiro/covid19-brazil-api/blob/master/README.md"
+            link="https://github.com/devarthurribeiro/covid19-brazil-api/"
             title="Documentação &rarr;"
             description="Veja a doc da api 📝"
-          />
-          <Card
-            link="https://coronavirus.saude.gov.br/"
-            title="Leia &rarr;"
-            description="Sobre o vírus 🦠"
-          />
-          <Card
-            link="http://plataforma.saude.gov.br/novocoronavirus/"
-            title="Dados &rarr;"
-            description="Ministério da Saúde 🏥"
           />
           <Card
             link="https://github.com/devarthurribeiro"
@@ -126,11 +116,6 @@ function Home (props) {
         justify-content: center;
         align-items: center;
         letter-spacing: .2em;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
       }
 
       .title a {
@@ -209,6 +194,11 @@ function Home (props) {
 
       * {
         box-sizing: border-box;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
       }
     `}</style>
 
