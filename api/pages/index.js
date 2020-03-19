@@ -15,7 +15,7 @@ function Home () {
     <div className="container">
       <Head>
         <title>COVID-19 Brazil API</title>
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/favicon.png" />
 
         <meta name="keywords" content="api, covid19, covid-19, brasil, gratis, json, coronavirus" />
         <meta name="author" content="Arthur Ribeiro, devarthurribeiro@gmail.com" />
@@ -31,7 +31,7 @@ function Home () {
         </div>
         <p className="description">
           Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil.
-      </p>
+        </p>
 
         <div className="grid">
           <Card
@@ -55,6 +55,7 @@ function Home () {
             description="@devarthurribeiro"
           />
         </div>
+
       </main>
 
       <footer>
@@ -64,7 +65,7 @@ function Home () {
           rel="noopener noreferrer"
         >
           Feito com 💚
-      </a>
+        </a>
       </footer>
 
       <style jsx>{`
