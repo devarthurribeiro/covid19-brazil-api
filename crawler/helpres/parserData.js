@@ -1,7 +1,6 @@
 const states = require('./states');
 
-function parseData (data) {
-  const datetime = new Date()
+function parseData (data, datetime = new Date()) {
   return data.map(item => {
     return {
       uid: item["uid"] || "",
