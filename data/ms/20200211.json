@@ -1,0 +1,86 @@
+[
+  {
+    "uid": 23,
+    "uf": "Ceará",
+    "state": "CE",
+    "cases": 0,
+    "deaths": 0,
+    "suspects": 0,
+    "refuses": 1,
+    "broadcast": false,
+    "comments": "",
+    "datetime": "2020-02-11T19:00:00.000Z"
+  },
+  {
+    "uid": 31,
+    "uf": "Minas Gerais",
+    "state": "MG",
+    "cases": 0,
+    "deaths": 0,
+    "suspects": 1,
+    "refuses": 1,
+    "broadcast": false,
+    "comments": "",
+    "datetime": "2020-02-11T19:00:00.000Z"
+  },
+  {
+    "uid": 33,
+    "uf": "Rio de Janeiro",
+    "state": "RJ",
+    "cases": 0,
+    "deaths": 0,
+    "suspects": 2,
+    "refuses": 3,
+    "broadcast": false,
+    "comments": "",
+    "datetime": "2020-02-11T19:00:00.000Z"
+  },
+  {
+    "uid": 35,
+    "uf": "São Paulo",
+    "state": "SP",
+    "cases": 0,
+    "deaths": 0,
+    "suspects": 3,
+    "refuses": 14,
+    "broadcast": false,
+    "comments": "",
+    "datetime": "2020-02-11T19:00:00.000Z"
+  },
+  {
+    "uid": 41,
+    "uf": "Paraná",
+    "state": "PR",
+    "cases": 0,
+    "deaths": 0,
+    "suspects": 1,
+    "refuses": 2,
+    "broadcast": false,
+    "comments": "",
+    "datetime": "2020-02-11T19:00:00.000Z"
+  },
+  {
+    "uid": 42,
+    "uf": "Santa Catarina",
+    "state": "SC",
+    "cases": 0,
+    "deaths": 0,
+    "suspects": 0,
+    "refuses": 4,
+    "broadcast": false,
+    "comments": "",
+    "datetime": "2020-02-11T19:00:00.000Z"
+  },
+  {
+    "uid": 43,
+    "uf": "Rio Grande do Sul",
+    "state": "RS",
+    "cases": 0,
+    "deaths": 0,
+    "suspects": 1,
+    "refuses": 8,
+    "broadcast": false,
+    "comments": "",
+    "datetime": "2020-02-11T19:00:00.000Z"
+  }
+]
