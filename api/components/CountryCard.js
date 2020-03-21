@@ -5,10 +5,10 @@ import Card from '../components/Card';
 import analityc from '../util/analytic'
 
 const mapBrands = {
-  brazil: '🇧🇷',
-  italy: '🇮🇹',
-  us: '🇺🇸',
-  china: '🇨🇳',
+  Brazil: '🇧🇷',
+  Italy: '🇮🇹',
+  US: '🇺🇸',
+  China: '🇨🇳',
 }
 
 function CountryCard (props) {
@@ -31,7 +31,7 @@ function CountryCard (props) {
 
   function shareData () {
     return encodeURIComponent(`
-      *Casos coronavírus no ${data.country} ${mapBrands[data.country.toLowerCase()]}*
+      *Casos coronavírus no ${data.country} ${mapBrands[data.country]}*
 
       🕐 *Atualizado* ${formatDate(data.updated_at)}
 
@@ -63,7 +63,7 @@ function CountryCard (props) {
   return (
     <Card
       link=""
-      title={"Status " + data.country}
+      title={`Status ${data.country} ${mapBrands[data.country]}`}
     >
       <p>
         ✅ <strong>{data.confirmed}</strong> Confirmados <br />
