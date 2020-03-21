@@ -15,12 +15,31 @@ Provide a json API with updated data on advancement of coronavirus Brazil. Just 
 - [CSSEGISandData](https://github.com/CSSEGISandData/COVID-19)
 - [Ministério da Saúde](http://plataforma.saude.gov.br/novocoronavirus)
 
-## Run project 🚀
+## Development server 🚀
 
-Development server
+Clone the project:
+
+```
+git clone https://github.com/devarthurribeiro/covid19-brazil-api.git
+```
+
+Go into the project root folder:
+
+```
+cd covid19-brazil-api/api
+```
+
+Install the projects dependencies:
 
 ```bash
-cd api
+npm install
+# or
+yarn
+```
+
+Run project
+
+```bash
 npm run dev
 # or
 yarn dev
@@ -30,7 +49,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Endpoints 🔌
 
-the base URL:
+Base URL:
 ```
 https://covid19-brazil-api.now.sh
 ```
