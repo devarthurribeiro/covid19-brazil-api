@@ -32,16 +32,12 @@ cd covid19-brazil-api/api
 Install the projects dependencies:
 
 ```bash
-npm install
-# or
 yarn
 ```
 
 Run project
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
