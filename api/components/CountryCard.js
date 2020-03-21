@@ -26,7 +26,7 @@ function CountryCard(props) {
   useEffect(() => {
     async function fethData() {
       const result = await axios.get(
-        `https://covid19-brazil-api.now.sh/api/report/v1/${props.country}`,
+        `${window.location.origin}/api/report/v1/${props.country}`,
       );
       setData(result.data.data);
     }
