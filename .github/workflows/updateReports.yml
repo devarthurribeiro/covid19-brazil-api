@@ -2,7 +2,7 @@ name: Update reports
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/30 * * * *'
 
 jobs:
   crawler:
@@ -16,7 +16,7 @@ jobs:
       - run: cd crawler && npm install && node index.js
         env:
           MS_URL: http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js
-          OD_URL=: https://olhardigital.com.br/site/arquivos/json/covid19.json
+          OD_URL: https://olhardigital.com.br/site/arquivos/json/covid19.json
       - uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
         with:
           add: 'data'  
