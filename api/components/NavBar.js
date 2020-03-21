@@ -1,44 +1,40 @@
 const NavBar = () => (
   <div>
-    <div className="flex-center">
-      <h1 className="title">
-        COVID-19 Brazil API
-      </h1>
-      <img src="/logo.svg" width="100px" className="logo" />
-    </div>
-    <p className="description">
-      Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil.
-    </p>
+    <nav>
+      <div className="item">
+        <h1 className="title">
+          <a href="./">COVID-19 Brazil API</a>
+        </h1>
+        <img src="/logo.svg" width="40px" className="logo" />
+      </div>
+      <div className="item">
+        <a href="https://github.com/devarthurribeiro/covid19-brazil-api/">Docs</a>
+      </div>
+    </nav>
+
     <style jsx>{`
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #202124;
+        height: 64px;
+        padding: 0 20px;
+      }
+
+      nav .item {
+        display: flex;
+        align-items: center;
       }
 
       .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
+        
       }
 
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        font-size: 1.5rem;
-        color: #818181;
-      }
       .logo {
         margin: 16px;
-        animation: rotation 20s infinite linear;
+        //animation: rotation 20s infinite linear;
       }
 
       @keyframes rotation {

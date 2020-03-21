@@ -30,10 +30,15 @@ function Home (props) {
         <meta name="description" content="API para notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil." />
       </Head>
 
-      <main>
-        <NavBar />
+      <NavBar />
 
-        <h2>Links</h2>
+      <main>
+        <br />
+        <h2>Sobre</h2>
+        <p className="description">
+          Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil e mundo.
+        </p>
+        <br />
         <div className="grid">
           <Card
             link="https://github.com/devarthurribeiro/covid19-brazil-api/"
@@ -46,9 +51,9 @@ function Home (props) {
             description="@devarthurribeiro 👨🏻‍💻"
           />
         </div>
-
+        <br />
         <h2>
-          <a href="./status">Acompanhe</a>
+          <a href="./status">Acompanhe &rarr;</a>
         </h2>
         <Countries />
         <br />
@@ -73,6 +78,11 @@ function Home (props) {
         min-height: 100vh;
         padding: 0 .75em
       }
+
+      .description {
+        font-size: 1.5rem;
+        color: #818181;
+      } 
 
       code {
         background: #4ffa7b;
