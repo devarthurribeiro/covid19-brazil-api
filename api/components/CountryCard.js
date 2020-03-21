@@ -41,7 +41,7 @@ function CountryCard (props) {
       💀 *${data.deaths}* Mortes
       
       📊 *Fonte:* WHO, CDC, ECDC, NHC and DXY
-      covid19-brazil-api.now.sh/
+      covid19-brazil-api.now.sh/status
 
       ⚠️ *Evite fake news*
     
