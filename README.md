@@ -52,8 +52,6 @@ https://covid19-brazil-api.now.sh
       "deaths": 1,
       "suspects": 5047,
       "refuses": 709,
-      "broadcast": "true",
-      "comments": "Transmissão comunitária no município de São Paulo.",
     }
     //...
    ]

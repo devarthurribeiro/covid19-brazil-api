@@ -1,46 +1,82 @@
-require('dotenv').config();
+require("dotenv").config();
 
-const fs = require('fs');
-const axios = require('axios');
-const R = require('ramda');
+const R = require("ramda");
 
-const parseData = require('./helpres/parserData');
-const execShellCommand = require('./helpres/execShellCommand')
+const parseData = require("./helpres/parserData");
+const { pushToRepo, fetchAlldata, saveReport } = require("./util");
 
-async function pushToRepo ({ date, time }) {
-  const cmd = `git add ../data && git commit -m 'update reports ${date} - ${time}' && git push origin`;
-  await execShellCommand(cmd);
+const datasets = [
+  {
+    url: process.env.MS_URL,
+    formatBody: body => {
+      const latestReport = R.last(JSON.parse(body.substring(13)).brazil);
+
+      const date = R.reverse(latestReport.date.split("/"));
+      const time = latestReport.time.split(":");
+      const datetime = new Date(date);
+
+      datetime.setHours(time[0]);
+      datetime.setMinutes(time[1]);
+
+      const data = latestReport.values.map(item => ({ ...item, datetime }));
+      const parsedData = parseData(data, datetime, "ms");
+
+      return parsedData;
+    }
+  },
+  {
+    url: process.env.OD_URL,
+    formatBody: body => parseData(body, undefined, 'od')
+  }
+];
+
+function sumTotalCases (list) {
+  return list.reduce((total, item) => (total + (item.cases + item.deaths)), 0)
+}
+
+function getMoreUpdatedReport (reports) {
+  const comparationReport = reports.map(report => {
+    return {
+      report,
+      totalCases: sumTotalCases(report)
+    }
+  })
+
+  let totalCases = comparationReport[0].totalCases;
+
+  const r = comparationReport.find(report => {
+    return (report.totalCases > totalCases);
+  })
+
+  return (r ? r : comparationReport[0])
 }
 
 async function startCrawler () {
-  const { data } = await axios.get(`${process.env.MS_URL}`);
+  const data = await fetchAlldata(datasets);
 
-  const dataset = JSON.parse(data.substring(13)).brazil;
-  const latestReport = R.last(dataset);
+  const reportDate = new Date().toISOString().slice(0, 10).split('-');
+  const filename = `${reportDate[0]}${reportDate[1]}${reportDate[2]}.json`;
 
-  const date = R.reverse(latestReport.date.split('/'));
-  const time = latestReport.time.split(':');
-  const datetime = new Date(date);
+  const validReports = data.filter(report => (report.length > 0))
 
-  datetime.setHours(time[0]);
-  datetime.setMinutes(time[1]);
+  if (validReports.length > 0) {
+    const newReport = getMoreUpdatedReport(validReports);
+    const latestReportCount = sumTotalCases(require('../data/ms/report.json'));
 
-  const filename = `${date[0]}${date[1]}${date[2]}.json`;
 
-  if (!fs.existsSync(`../data/ms/${filename}`)) {
-    const parsedData = parseData(latestReport.values, datetime);
+    if (newReport.totalCases > latestReportCount) {
+      console.table(newReport.report);
+      console.log(`Total cases: ${newReport.totalCases}`);
 
-    fs.writeFileSync(`../data/ms/${filename}`, JSON.stringify(parsedData, 0, 2));
-    fs.copyFileSync(`../data/ms/${filename}`, `../data/ms/report.json`);
+      saveReport(filename, newReport.report);
+      //await pushToRepo();
+    } else {
+      console.log("⚠️ Not avalible update!");
+    }
 
-    await pushToRepo(latestReport)
-
-    console.log('♻️ Updated dataset!');
   } else {
-    console.log('⚠️ Not avalible update');
+    console.log("🚨 No response from datasets!");
   }
-
-
 }
 
-startCrawler();
+startCrawler()
