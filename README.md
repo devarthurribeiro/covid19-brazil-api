@@ -20,6 +20,7 @@ Fornecer um API json com dados atualizados sobre avanço do coronavírus Brasil.
 Servidor de desenvolvimento
 
 ```bash
+cd api
 npm run dev
 # or
 yarn dev
