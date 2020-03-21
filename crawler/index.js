@@ -66,7 +66,6 @@ async function startCrawler() {
       console.log(`Total cases: ${newReport.totalCases}`);
 
       saveReport(filename, newReport.report);
-      // await pushToRepo();
     } else {
       console.log('⚠️ Not avalible update!');
     }

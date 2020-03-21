@@ -1,23 +1,6 @@
-const { exec } = require('child_process');
 const fs = require('fs');
 const axios = require('axios');
 
-function execShellCommand(cmd) {
-  console.log(cmd);
-  return new Promise((resolve) => {
-    exec(cmd, (error, stdout, stderr) => {
-      if (error) {
-        console.warn(error);
-      }
-      resolve(stdout || stderr);
-    });
-  });
-}
-
-async function pushToRepo() {
-  const cmd = `git add ../data && git commit -m 'update reports ${new Date().toISOString()}' && git push origin`;
-  await execShellCommand(cmd);
-}
 
 async function fetchAlldata(sources) {
   const requests = sources.map((source) => {
@@ -41,8 +24,6 @@ async function saveReport(filename, reportData) {
 }
 
 module.exports = {
-  execShellCommand,
-  pushToRepo,
   fetchAlldata,
   saveReport,
 };
