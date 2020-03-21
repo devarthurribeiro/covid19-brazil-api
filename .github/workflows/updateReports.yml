@@ -16,7 +16,6 @@ jobs:
       with:
         node-version: 13.x
     - run: cd crawler && npm install && node index.js
-    - run: npm install
     - uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
       with:
         add: 'data'  
