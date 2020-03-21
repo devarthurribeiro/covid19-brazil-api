@@ -133,6 +133,14 @@ https://covid19-brazil-api.now.sh
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
 
+## Contribuidores
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Lukazovic"><img src="https://avatars0.githubusercontent.com/u/54550926?s=460&u=cdeeac652ce0597a986fbdcff6e249ad27a1f1da&v=4" width="100px;" alt=""/><br /><sub><b>Lucas Vieira</b></sub></a><br /><a href="https://github.com/devarthurribeiro/covid19-brazil-api/commits?author=Lukazovic" title="Code">💻</a></a></td>
+  <tr>
+</table>
+
 ## Autor
 
 <table>
