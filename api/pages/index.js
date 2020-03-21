@@ -57,17 +57,6 @@ function Home (props) {
         </h2>
         <Countries />
         <br />
-
-        <div className="flex-center">
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_donations" />
-            <input type="hidden" name="business" value="PWCXMS2YKHJ7A" />
-            <input type="hidden" name="currency_code" value="BRL" />
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-            <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
-          </form>
-        </div>
-        <br />
       </main>
 
 
@@ -83,17 +72,6 @@ function Home (props) {
         font-size: 1.5rem;
         color: #818181;
       } 
-
-      code {
-        background: #4ffa7b;
-        color: #202124;
-        font-weight: 600;
-        border-radius: 30px;
-        padding: 0.75rem 1em;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
 
     `}</style>
     </Layout>
