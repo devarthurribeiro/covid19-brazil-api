@@ -7,6 +7,7 @@ function fetchData (url) {
       let rawData = '';
       res.on('data', (chunk) => { rawData += chunk; });
       res.on('end', () => resolve(rawData));
+      res.on('error', (error) => reject(error));
     })
   })
 }

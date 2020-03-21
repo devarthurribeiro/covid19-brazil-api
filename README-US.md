@@ -3,23 +3,21 @@
 </p>
 <h1 align="center">COVID-19 Brazil API</h1>
 <p align="center">
-  <strong>Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil</strong>
+  <strong>Notification of cases of disease by the coronavirus 2019 (COVID-19) in Brazil and worldwide.</strong>
 </p>
 
-[English version](./README-US.md) 🇺🇸
+## Reason 🤔
 
-## Motivo 🤔
-
-Fornecer um API json com dados atualizados sobre avanço do coronavírus Brasil. Assim como em outros países.
+Provide a json API with updated data on advancement of coronavirus Brazil. Just like in other countries.
 
 ## Datasets 💽
 
 - [CSSEGISandData](https://github.com/CSSEGISandData/COVID-19)
 - [Ministério da Saúde](http://plataforma.saude.gov.br/novocoronavirus)
 
-## Rodando o projeto 🚀
+## Run project 🚀
 
-Servidor de desenvolvimento
+Development server
 
 ```bash
 cd api
@@ -28,17 +26,16 @@ npm run dev
 yarn dev
 ```
 
-Visite [http://localhost:3000](http://localhost:3000) com o seu navegador para ver o resultado.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Endpoints 🔌
 
-Todas chamas devem usar a url base:
-
+the base URL:
 ```
 https://covid19-brazil-api.now.sh
 ```
 
-#### Consulta dados de casos por estado
+#### Cases by Brazilian states
 
 ```
 // GET /api/report/v1
@@ -60,7 +57,7 @@ https://covid19-brazil-api.now.sh
 }
 ```
 
-#### Consulta dados de casos de todos paises
+#### Cases from all countries
 
 ```
 // GET /api/report/v1/countries
@@ -80,7 +77,7 @@ https://covid19-brazil-api.now.sh
 }
 ```
 
-#### Consulta dados de casos por pais
+#### Cases by country
 
 ```
 // GET /api/report/v1/:country
@@ -98,7 +95,7 @@ https://covid19-brazil-api.now.sh
 }
 ```
 
-#### Status da api
+#### API status
 
 ```
 // GET /api/status/v1
@@ -118,7 +115,7 @@ https://covid19-brazil-api.now.sh
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
 
-## Autor
+## Author
 
 <table>
   <tr>

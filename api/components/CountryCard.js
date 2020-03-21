@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import Card from "../components/Card";
+import Card from '../components/Card';
+import analityc from '../util/analytic'
 
 const mapBrands = {
-  brazil: "🇧🇷",
-  italy: "🇮🇹",
-  us: "🇺🇸",
-  china: "🇨🇳"
-};
+  Brazil: '🇧🇷',
+  Italy: '🇮🇹',
+  US: '🇺🇸',
+  China: '🇨🇳',
+}
 
 function CountryCard(props) {
   const [data, setData] = useState({});
@@ -39,9 +40,7 @@ function CountryCard(props) {
 
   function shareData() {
     return encodeURIComponent(`
-      *Casos coronavírus no ${data.country} ${
-      mapBrands[data.country.toLowerCase()]
-    }*
+      *Casos coronavírus no ${data.country} ${mapBrands[data.country]}*
 
       🕐 *Atualizado* ${formatDate(data.updated_at)}
 
@@ -51,7 +50,7 @@ function CountryCard(props) {
       💀 *${data.deaths}* Mortes
 
       📊 *Fonte:* WHO, CDC, ECDC, NHC and DXY
-      covid19-brazil-api.now.sh/
+      covid19-brazil-api.now.sh/status
 
       ⚠️ *Evite fake news*
 
@@ -60,12 +59,21 @@ function CountryCard(props) {
     `);
   }
 
-  function send() {
-    window.open(`https://api.whatsapp.com/send?text=${shareData()}`);
+  function send () {
+    analityc.event({
+      category: 'share',
+      action: 'share-country-report-' + data.country.toLowerCase()
+    })
+    window.open(
+      `https://api.whatsapp.com/send?text=${shareData()}`
+    );
   }
 
   return (
-    <Card link="" title={"Status " + data.country}>
+    <Card
+      link=""
+      title={`Status ${data.country} ${mapBrands[data.country]}`}
+    >
       <p>
         ✅ <strong>{data.confirmed}</strong> Confirmados <br />
         🚨 <strong>{data.cases}</strong> Ativos <br />

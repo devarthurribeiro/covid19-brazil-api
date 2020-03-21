@@ -2210,10 +2210,10 @@ decode-uri-component@^0.2.0:
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
 
-deep-is@~0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
-  integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
+deeks@2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/deeks/-/deeks-2.2.4.tgz#c2aaf84cecd0905ac378baeb0e5988a6a02f1f8c"
+  integrity sha512-T8HtfilZeYvVRmTx9J6Nk4e0ayb/RqHx/XBOJpUybQyedRRtVw0I21pezA+OjXoCnL5YkkjCAM2TFvSJt0NwWw==
 
 defaults@^1.0.3:
   version "1.0.3"
@@ -2295,19 +2295,10 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
-doctrine@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/doctrine/-/doctrine-2.1.0.tgz#5cd01fc101621b42c4cd7f5d1a66243716d3f39d"
-  integrity sha512-35mSku4ZXK0vfCuHEDAwt55dg2jNajHZ1odvF+8SSr82EsZY4QmXfuWso8oEd8zRhVObSN18aM0CjSdoBX7zIw==
-  dependencies:
-    esutils "^2.0.2"
-
-doctrine@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/doctrine/-/doctrine-3.0.0.tgz#addebead72a6574db783639dc87a121773973961"
-  integrity sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==
-  dependencies:
-    esutils "^2.0.2"
+doc-path@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/doc-path/-/doc-path-2.0.2.tgz#c021f9cc2a2942159d9441f20e4918b688cbf663"
+  integrity sha512-7KAEFeGh+xlqATVLXywN6g2U6RF7CW1la80BdtRF3BaiP1rz3r1UCewUeOnwpJ9A44LX66u32dYaU9zIqC1/TQ==
 
 dom-serializer@^0.2.1:
   version "0.2.2"
@@ -3601,6 +3592,14 @@ jsesc@~0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
   integrity sha1-597mbjXW/Bb3EP6R1c9p9w8IkR0=
+
+json-2-csv@^3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/json-2-csv/-/json-2-csv-3.6.1.tgz#0ac0a94c129c424730c9a58ee3b014632539a70a"
+  integrity sha512-aNMcZQFkNJltEzc/WclcKb0JStgKiFAaxS/mombLWf73jAZYUxiMKPFpfn8zyD2ukYrxOno2C884Y/WbCRQR8A==
+  dependencies:
+    deeks "2.2.4"
+    doc-path "2.0.2"
 
 json-parse-better-errors@^1.0.1, json-parse-better-errors@^1.0.2:
   version "1.0.2"
