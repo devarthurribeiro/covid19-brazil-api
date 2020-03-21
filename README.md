@@ -112,6 +112,10 @@ https://covid19-brazil-api.now.sh
 }
 ```
 
+## License 📄
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
+
 ## Autor
 
 <table>
