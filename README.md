@@ -34,16 +34,12 @@ cd covid19-brazil-api/api
 Baixando as dependências do projeto
 
 ```bash
-npm install
-# or
 yarn
 ```
 
 Rodando o projeto
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
