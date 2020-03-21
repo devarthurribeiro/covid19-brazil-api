@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import moment from "moment";
 
 import Card from "../components/Card";
 
@@ -26,7 +25,16 @@ function CountryCard(props) {
 
   function formatDate(date) {
     const d = new Date(date);
-    return moment(d).format("DD/MM/YYYY - HH:mm");
+    const day = `${formatNumber(d.getDate())}/${formatNumber(d.getMonth() + 1)}/${d.getFullYear()}`
+    const hour = `${formatNumber(d.getHours())}:${formatNumber(d.getMinutes())}`
+    return `${day} - ${hour}`;
+  }
+
+  function formatNumber(number) {
+    if (number <10){
+      return `0${number}`
+    }
+    return number
   }
 
   function shareData() {
