@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import Card from '../components/Card';
+import analityc from '../util/analytic'
 
 const mapBrands = {
   brazil: '🇧🇷',
@@ -50,6 +51,10 @@ function CountryCard (props) {
   }
 
   function send () {
+    analityc.event({
+      category: 'share',
+      action: 'share-country-report-' + data.country.toLowerCase()
+    })
     window.open(
       `https://api.whatsapp.com/send?text=${shareData()}`
     );
