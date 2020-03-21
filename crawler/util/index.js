@@ -22,6 +22,7 @@ async function pushToRepo () {
 
 async function fetchAlldata (sources) {
   const requests = sources.map(source => {
+    console.log(`request to ${source.url}`)
     return axios
       .get(source.url)
       .then(({ data }) => source.formatBody(data))
