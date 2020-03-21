@@ -1,20 +1,20 @@
-import microCors from "micro-cors";
+import microCors from 'micro-cors';
+
+import fetchData from '../../../../util/fetchData';
+
 const cors = microCors();
 
-import fetchData from "../../../../util/fetchData";
-
 async function Country(request, response) {
-  const country = request.query.country;
+  const { country } = request.query;
 
   response.status(200);
   const dataset = await fetchData(
-    process.env.baseUrlCSSE +
-      `query?f=json&where=Country_Region='${country}'&outFields=*&cacheHint=true`
+    `${process.env.baseUrlCSSE
+    }query?f=json&where=Country_Region='${country}'&outFields=*&cacheHint=true`,
   );
   const jsonDataset = JSON.parse(dataset);
 
   if (jsonDataset.features.length > 0) {
-    const country = jsonDataset.features[0].attributes;
     response.json({
       data: {
         country: country.Country_Region,
@@ -22,12 +22,12 @@ async function Country(request, response) {
         confirmed: country.Confirmed,
         deaths: country.Deaths,
         recovered: country.Recovered,
-        updated_at: new Date(country.Last_Update)
-      }
+        updated_at: new Date(country.Last_Update),
+      },
     });
   } else {
     response.json({
-      data: {}
+      data: {},
     });
   }
 }

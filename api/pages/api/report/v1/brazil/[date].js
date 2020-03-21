@@ -1,26 +1,27 @@
 import microCors from 'micro-cors';
+
+import fetchData from '../../../../../util/fetchData';
+
 const cors = microCors();
 
-import fetchData from '../../../../../util/fetchData'
-
-function parseJson (data) {
+function parseJson(data) {
   try {
-    JSON.parse(data);
+    return JSON.parse(data);
   } catch (error) {
-    return []
+    return [];
   }
 }
 
-async function ReportByDate (request, response) {
-  const date = request.query.date;
+async function ReportByDate(request, response) {
+  const { date } = request.query;
 
   response.status(200);
   const dataset = await fetchData(`${process.env.baseUrlMs + date}.json`);
   const jsonDataset = parseJson(dataset);
 
   response.json({
-    data: jsonDataset
+    data: jsonDataset,
   });
 }
 
-export default cors(ReportByDate)
+export default cors(ReportByDate);

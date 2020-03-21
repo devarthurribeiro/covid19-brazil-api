@@ -1,10 +1,11 @@
 import microCors from 'micro-cors';
 import { json2csv } from 'json-2-csv';
+
+import fetchData from '../../../../util/fetchData';
+
 const cors = microCors();
 
-import fetchData from '../../../../util/fetchData'
-
-async function Csv (request, response) {
+async function Csv(request, response) {
   response.status(200);
   const dataset = await fetchData(`${process.env.baseUrlMs}report.json`);
   const jsonDataset = JSON.parse(dataset);
@@ -14,4 +15,4 @@ async function Csv (request, response) {
   }, { excelBOM: true });
 }
 
-export default cors(Csv)
+export default cors(Csv);

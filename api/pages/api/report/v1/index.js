@@ -1,16 +1,17 @@
 import microCors from 'micro-cors';
+
+import fetchData from '../../../../util/fetchData';
+
 const cors = microCors();
 
-import fetchData from '../../../../util/fetchData'
-
-async function Report (request, response) {
+async function Report(request, response) {
   response.status(200);
   const dataset = await fetchData(`${process.env.baseUrlMs}report.json`);
   const jsonDataset = JSON.parse(dataset);
 
   response.json({
-    data: jsonDataset
+    data: jsonDataset,
   });
 }
 
-export default cors(Report)
+export default cors(Report);
