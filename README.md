@@ -33,7 +33,7 @@ cd covid19-brazil-api/api
 
 Baixando as dependências do projeto
 
-```
+```bash
 npm install
 # or
 yarn
