@@ -5,14 +5,15 @@ const NavBar = () => (
         <h1 className="title">
           <a href="./">COVID-19 Brazil API</a>
         </h1>
-        <img src="/logo.svg" width="40px" className="logo" />
+        <img src="/logo.svg" width="40px" className="logo" alt="logo" />
       </div>
       <div className="item">
         <a href="https://github.com/devarthurribeiro/covid19-brazil-api/">Docs</a>
       </div>
     </nav>
 
-    <style jsx>{`
+    <style jsx>
+      {`
 
       nav {
         display: flex;
@@ -29,7 +30,7 @@ const NavBar = () => (
       }
 
       .title {
-        
+
       }
 
       .logo {
@@ -45,8 +46,9 @@ const NavBar = () => (
             -webkit-transform: rotate(359deg);
         }
       }
-    `}</style>
+    `}
+    </style>
   </div>
-)
+);
 
 export default NavBar;

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import analytic from '../util/analytic.js'
+import analytic from '../util/analytic';
 
 import Layout from '../components/Layout';
 import NavBar from '../components/NavBar';
@@ -8,12 +8,7 @@ import Footer from '../components/Footer';
 import Card from '../components/Card';
 import Countries from '../components/Countries';
 
-import {
-  WhatsappShareButton
-} from "react-share";
-
-
-function Home (props) {
+function Home() {
   useEffect(() => {
     analytic.pageview('/');
   }, []);
@@ -52,7 +47,8 @@ function Home (props) {
 
       <Footer />
 
-      <style jsx>{`
+      <style jsx>
+        {`
       .container {
         min-height: 100vh;
         padding: 0 .75em
@@ -63,9 +59,10 @@ function Home (props) {
         color: #818181;
       }
 
-    `}</style>
+    `}
+      </style>
     </Layout>
-  )
+  );
 }
 
 export default Home;

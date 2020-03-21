@@ -1,53 +1,53 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 import {
   FacebookShareButton,
   TwitterShareButton,
   FacebookIcon,
   WhatsappIcon,
-  TwitterIcon
-} from "react-share";
+  TwitterIcon,
+} from 'react-share';
 
 
-import Card from '../components/Card';
-import analityc from '../util/analytic'
+import Card from './Card';
+import analityc from '../util/analytic';
 
 const mapBrands = {
   Brazil: '🇧🇷',
   Italy: '🇮🇹',
   US: '🇺🇸',
   China: '🇨🇳',
-}
+};
 
-function CountryCard (props) {
+function CountryCard(props) {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    async function fethData () {
+    async function fethData() {
       const result = await axios.get(
-        "https://covid19-brazil-api.now.sh/api/report/v1/" + props.country
+        `https://covid19-brazil-api.now.sh/api/report/v1/${props.country}`,
       );
       setData(result.data.data);
     }
     fethData();
   }, []);
 
-  function formatDate (date) {
+  function formatNumber(number) {
+    if (number < 10) {
+      return `0${number}`;
+    }
+    return number;
+  }
+
+  function formatDate(date) {
     const d = new Date(date);
-    const day = `${formatNumber(d.getDate())}/${formatNumber(d.getMonth() + 1)}/${d.getFullYear()}`
-    const hour = `${formatNumber(d.getHours())}:${formatNumber(d.getMinutes())}`
+    const day = `${formatNumber(d.getDate())}/${formatNumber(d.getMonth() + 1)}/${d.getFullYear()}`;
+    const hour = `${formatNumber(d.getHours())}:${formatNumber(d.getMinutes())}`;
     return `${day} - ${hour}`;
   }
 
-  function formatNumber (number) {
-    if (number < 10) {
-      return `0${number}`
-    }
-    return number
-  }
-
-  function shareData () {
+  function shareData() {
     return (`
       *Casos coronavírus no ${data.country} ${mapBrands[data.country]}*
 
@@ -69,13 +69,13 @@ function CountryCard (props) {
     `);
   }
 
-  function send () {
+  function send() {
     analityc.event({
       category: 'share',
-      action: 'share-country-report-' + data.country.toLowerCase()
-    })
+      action: `share-country-report-${data.country.toLowerCase()}`,
+    });
     window.open(
-      `https://api.whatsapp.com/send?text=${encodeURIComponent(shareData())}`
+      `https://api.whatsapp.com/send?text=${encodeURIComponent(shareData())}`,
     );
   }
 
@@ -85,44 +85,62 @@ function CountryCard (props) {
       title={`Status ${data.country} ${mapBrands[data.country]}`}
     >
       <p>
-        ✅ <strong>{data.confirmed}</strong> Confirmados <br />
-        🚨 <strong>{data.cases}</strong> Ativos <br />
-        ♻️ <strong>{data.recovered}</strong> Recuperados <br />
-        💀 <strong>{data.deaths}</strong> Mortes
+        <span role="img" aria-label="check">✅</span>
+        {' '}
+        <strong>{data.confirmed}</strong>
+        {' '}
+        Confirmados
+        {' '}
+        <br />
+        <span role="img" aria-label="alert">🚨</span>
+        {' '}
+        <strong>{data.cases}</strong>
+        {' '}
+        Ativos
+        {' '}
+        <br />
+        <span role="img" aria-label="recovery">♻️</span>
+        {' '}
+        <strong>{data.recovered}</strong>
+        {' '}
+        Recuperados
+        {' '}
+        <br />
+        <span role="img" aria-label="death">💀</span>
+        {' '}
+        <strong>{data.deaths}</strong>
+        {' '}
+        Mortes
         <hr />
-        🕐 <strong>Atualizado</strong> {formatDate(data.updated_at)} <br />
-        📊 <strong>Fonte</strong> WHO
+        <span role="img" aria-label="time">🕐</span>
+        {' '}
+        <strong>Atualizado</strong>
+        {' '}
+        {formatDate(data.updated_at)}
+        {' '}
+        <br />
+        <span role="img" aria-label="chart">📊</span>
+        {' '}
+        <strong>Fonte</strong>
+        {' '}
+        WHO
       </p>
       <strong>Compartilhar</strong>
       <div className="flex-center">
-        <WhatsappIcon onClick={send} size={60}>
-          <span>Compartilhar</span>
-          <img
-            src="https://image.flaticon.com/icons/svg/2111/2111728.svg"
-            width="38px"
-          />
-        </WhatsappIcon>
-        <FacebookShareButton url={"https://covid19-brazil-api.now.sh/status"} quote={shareData()}>
-          <FacebookIcon size={60}>
-            <span>Compartilhar</span>
-            <img
-              src="https://image.flaticon.com/icons/svg/2111/2111728.svg"
-              width="38px"
-            />
-          </FacebookIcon>
+        <WhatsappIcon
+          onClick={send}
+          size={60}
+        />
+        <FacebookShareButton url="https://covid19-brazil-api.now.sh/status" quote={shareData()}>
+          <FacebookIcon size={60} />
         </FacebookShareButton>
-        <TwitterShareButton url={"https://covid19-brazil-api.now.sh/status"} title={shareData().substr(1, 240)}>
-          <TwitterIcon size={60}>
-            <span>Compartilhar</span>
-            <img
-              src="https://image.flaticon.com/icons/svg/2111/2111728.svg"
-              width="38px"
-            />
-          </TwitterIcon>
+        <TwitterShareButton url="https://covid19-brazil-api.now.sh/status" title={shareData().substr(1, 240)}>
+          <TwitterIcon size={60} />
         </TwitterShareButton>
       </div>
 
-      <style jsx>{`
+      <style jsx>
+        {`
       .share-button {
         width: 100%;
         background: #202124;
@@ -142,7 +160,8 @@ function CountryCard (props) {
       .share-button img {
         margin-left: 16px
       }
-      `}</style>
+      `}
+      </style>
     </Card>
   );
 }

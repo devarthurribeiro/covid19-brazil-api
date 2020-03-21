@@ -1,18 +1,17 @@
 import { useEffect } from 'react';
 
 
-import analytic from '../util/analytic.js'
+import analytic from '../util/analytic';
 
-import NavBar from '../components/NavBar'
-import Layout from '../components/Layout'
+import NavBar from '../components/NavBar';
+import Layout from '../components/Layout';
 import Footer from '../components/Footer';
 import Countries from '../components/Countries';
 
-function Status () {
-
+function Status() {
   useEffect(() => {
-    analytic.pageview('/status')
-  }, [])
+    analytic.pageview('/status');
+  }, []);
 
   return (
     <div>
@@ -27,7 +26,7 @@ function Status () {
         <Footer />
       </Layout>
     </div>
-  )
+  );
 }
 
 export default Status;

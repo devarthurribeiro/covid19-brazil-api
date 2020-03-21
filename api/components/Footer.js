@@ -6,7 +6,9 @@ const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Feito com 💚
+        Feito com
+        {' '}
+        <span role="img" aria-label="Heart">💚</span>
       </a>
     </div>
     <div className="item">
@@ -17,11 +19,16 @@ const Footer = () => (
         <input type="hidden" name="cmd" value="_donations" />
         <input type="hidden" name="business" value="PWCXMS2YKHJ7A" />
         <input type="hidden" name="currency_code" value="BRL" />
-        <button type="submit">Donate💰</button>
+        <button type="submit">
+          Donate
+          {' '}
+          <span role="img" aria-label="money">💰</span>
+        </button>
         <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
       </form>
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
       footer {
         width: 100%;
         min-height: 78px;
@@ -59,8 +66,9 @@ const Footer = () => (
           flex-direction: column;
         }
       }
-    `}</style>
+    `}
+    </style>
   </footer>
-)
+);
 
 export default Footer;

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-function Layout (props) {
+function Layout({ children }) {
   return (
     <div className="page-layout">
       <Head>
@@ -23,8 +23,9 @@ function Layout (props) {
         />
       </Head>
 
-      {props.children}
-      <style jsx global>{`
+      {children}
+      <style jsx global>
+        {`
       html,
       body {
         background-color: #000;
@@ -72,9 +73,10 @@ function Layout (props) {
           grid-template-columns: 1fr;
         }
       }
-    `}</style>
+    `}
+      </style>
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

@@ -1,17 +1,20 @@
-function Card(props) {
+function Card({
+  title, link, description, children,
+}) {
   return (
     <div className="card">
       <div>
-        <a href={props.link}>
-          <h3>{props.title}</h3>
+        <a href={link}>
+          <h3>{title}</h3>
         </a>
-        {props.description ? (
-          <p>{props.description}</p>
+        {description ? (
+          <p>{description}</p>
         ) : (
-          <div>{props.children}</div>
+          <div>{children}</div>
         )}
       </div>
-      <style jsx>{`
+      <style jsx>
+        {`
         .card {
           width: 100%;
           background-color: #0a0a0a;
@@ -42,7 +45,8 @@ function Card(props) {
           font-size: 1.25rem;
           line-height: 1.5;
         }
-      `}</style>
+      `}
+      </style>
     </div>
   );
 }
