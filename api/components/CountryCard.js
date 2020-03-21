@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import moment from 'moment';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import moment from "moment";
 
-import Card from '../components/Card';
+import Card from "../components/Card";
 
 const mapBrands = {
-  brazil: '🇧🇷',
-  italy: '🇮🇹',
-  us: '🇺🇸',
-  china: '🇨🇳'
+  brazil: "🇧🇷",
+  italy: "🇮🇹",
+  us: "🇺🇸",
+  china: "🇨🇳"
 };
 
 function CountryCard(props) {
@@ -16,7 +16,9 @@ function CountryCard(props) {
 
   useEffect(() => {
     async function fethData() {
-      const result = await axios.get('https://covid19-brazil-api.now.sh/api/report/v1/' + props.country);
+      const result = await axios.get(
+        "https://covid19-brazil-api.now.sh/api/report/v1/" + props.country
+      );
       setData(result.data.data);
     }
     fethData();
@@ -24,12 +26,14 @@ function CountryCard(props) {
 
   function formatDate(date) {
     const d = new Date(date);
-    return moment(d).format('DD/MM/YYYY - HH:mm');
+    return moment(d).format("DD/MM/YYYY - HH:mm");
   }
 
   function shareData() {
     return encodeURIComponent(`
-      *Casos coronavírus no ${data.country} ${mapBrands[data.country.toLowerCase()]}*
+      *Casos coronavírus no ${data.country} ${
+      mapBrands[data.country.toLowerCase()]
+    }*
 
       🕐 *Atualizado* ${formatDate(data.updated_at)}
 
@@ -37,12 +41,12 @@ function CountryCard(props) {
       🚨 *${data.cases}* Ativos
       ♻️ *${data.recovered}* Recuperados
       💀 *${data.deaths}* Mortes
-      
+
       📊 *Fonte:* WHO, CDC, ECDC, NHC and DXY
       covid19-brazil-api.now.sh/
 
       ⚠️ *Evite fake news*
-    
+
       ☢️ *Sobre a doença*
       coronavirus.saude.gov.br/index.php/sobre-a-doenca
     `);
@@ -53,7 +57,7 @@ function CountryCard(props) {
   }
 
   return (
-    <Card link="" title={'Status ' + data.country}>
+    <Card link="" title={"Status " + data.country}>
       <p>
         ✅ <strong>{data.confirmed}</strong> Confirmados <br />
         🚨 <strong>{data.cases}</strong> Ativos <br />
@@ -65,7 +69,10 @@ function CountryCard(props) {
       </p>
       <button onClick={send} className="share-button">
         <span>Compartilhar</span>
-        <img src="https://image.flaticon.com/icons/svg/2111/2111728.svg" width="38px" />
+        <img
+          src="https://image.flaticon.com/icons/svg/2111/2111728.svg"
+          width="38px"
+        />
       </button>
       <style jsx>{`
       .share-button {
