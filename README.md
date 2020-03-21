@@ -17,12 +17,31 @@ Fornecer uma API JSON com dados atualizados sobre o avanço do coronavírus no B
 - [CSSEGISandData](https://github.com/CSSEGISandData/COVID-19)
 - [Ministério da Saúde](http://plataforma.saude.gov.br/novocoronavirus)
 
-## Rodando o projeto 🚀
+## Servidor de desenvolvimento 🚀
 
-Servidor de desenvolvimento
+Clonando o projeto:
+
+```
+git clone https://github.com/devarthurribeiro/covid19-brazil-api.git
+```
+
+Navegando até a pasta do projeto:
+
+```
+cd covid19-brazil-api/api
+```
+
+Baixando as dependências do projeto
+
+```
+npm install
+# or
+yarn
+```
+
+Rodando o projeto
 
 ```bash
-cd api
 npm run dev
 # or
 yarn dev
