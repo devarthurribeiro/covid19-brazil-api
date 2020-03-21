@@ -10,7 +10,7 @@
 
 ## Motivo 🤔
 
-Fornecer um API json com dados atualizados sobre avanço do coronavírus Brasil. Assim como em outros países.
+Fornecer uma API JSON com dados atualizados sobre o avanço do coronavírus no Brasil, assim como em outros países.
 
 ## Datasets 💽
 
@@ -32,13 +32,13 @@ Visite [http://localhost:3000](http://localhost:3000) com o seu navegador para v
 
 ## Endpoints 🔌
 
-Todas chamas devem usar a url base:
+Todas chamadas devem usar a url base:
 
 ```
 https://covid19-brazil-api.now.sh
 ```
 
-#### Consulta dados de casos por estado
+#### Consultar dados de casos por estado
 
 ```
 // GET /api/report/v1
@@ -60,7 +60,7 @@ https://covid19-brazil-api.now.sh
 }
 ```
 
-#### Consulta dados de casos de todos paises
+#### Consultar dados de casos de todos países
 
 ```
 // GET /api/report/v1/countries
@@ -80,7 +80,7 @@ https://covid19-brazil-api.now.sh
 }
 ```
 
-#### Consulta dados de casos por pais
+#### Consultar dados de casos por país
 
 ```
 // GET /api/report/v1/:country
@@ -98,7 +98,7 @@ https://covid19-brazil-api.now.sh
 }
 ```
 
-#### Status da api
+#### Consultar status da API
 
 ```
 // GET /api/status/v1
