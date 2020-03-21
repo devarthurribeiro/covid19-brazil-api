@@ -2,26 +2,30 @@ name: Update reports
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/10 * * * *'
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [13.x]
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 13.x
     - run: cd crawler
     - run: npm install
     - run: node index.js
-      env:
+    - uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
+      with:
+        add: 'data'  
+        author_name: Arthur Ribeiro
+        author_email: devarthurribeiro@gmail.com
+        force: false
+        message: 'Update reports'
+    env:
         MS_URL: http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js
         OD_URL=: https://olhardigital.com.br/site/arquivos/json/covid19.json
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
