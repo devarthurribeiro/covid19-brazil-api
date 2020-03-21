@@ -1,15 +1,17 @@
 const states = require('./states');
 
 function getStateInfo (uf) {
-  Object.keys(states.codes).filter(key => {
-    if (states.codes[key] === uf.toLowerCse()) {
-      return {
+  let state = {}
+  Object.keys(states.codes).forEach(key => {
+    if (states.codes[key] === uf.toUpperCase()) {
+      state = {
         uf: states.codes[key],
-        uid: key,
+        uid: parseInt(key),
         name: states.names[key]
       }
     }
   });
+  return state
 }
 
 const dataMaps = {
