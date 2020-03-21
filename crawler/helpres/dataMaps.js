@@ -7,7 +7,7 @@ function getStateInfo (uf) {
       state = {
         uf: states.codes[key],
         uid: parseInt(key),
-        name: states.names[key]
+        state: states.names[key]
       }
     }
   });
