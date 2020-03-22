@@ -33,8 +33,8 @@ const dataMaps = {
   }),
   arcgis: (item) => ({
     uid: item.cod_uf || 0,
-    uf: states.names[item.cod_uf] || '',
-    state: states.codes[item.cod_uf] || '',
+    uf: states.codes[item.cod_uf] || '',
+    state: states.names[item.cod_uf] || '',
     cases: item.casos_conf || 0,
     deaths: item.obitos || 0,
     suspects: item.casos_susp || 0,
