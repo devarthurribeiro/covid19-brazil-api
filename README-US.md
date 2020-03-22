@@ -15,6 +15,10 @@ Provide a json API with updated data on advancement of coronavirus Brazil. Just 
 - [CSSEGISandData](https://github.com/CSSEGISandData/COVID-19)
 - [Ministério da Saúde](http://plataforma.saude.gov.br/novocoronavirus)
 
+## Showcase 🎯
+
+- [APP COVID-19 Estatísticas 📱](https://github.com/robsonsilv4/covid19_statistics)
+
 ## Development server 🚀
 
 Clone the project:
@@ -42,6 +46,10 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Docs 📄
+
+- [Site](https://covid19-brazil-api-docs.now.sh/)
 
 ## Endpoints 🔌
 
