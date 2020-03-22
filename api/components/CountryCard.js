@@ -127,15 +127,17 @@ function CountryCard(props) {
       </p>
       <strong>Compartilhar</strong>
       <div className="flex-center">
-        <WhatsappIcon
-          onClick={send}
-          size={60}
-        />
+        <span className="pointer">
+          <WhatsappIcon
+            onClick={send}
+            size={48}
+          />
+        </span>
         <FacebookShareButton url="https://covid19-brazil-api.now.sh/status" quote={shareData()}>
-          <FacebookIcon size={60} />
+          <FacebookIcon size={48} />
         </FacebookShareButton>
         <TwitterShareButton url="https://covid19-brazil-api.now.sh/status" title={shareData().substr(1, 240)}>
-          <TwitterIcon size={60} />
+          <TwitterIcon size={48} />
         </TwitterShareButton>
       </div>
 
@@ -159,6 +161,9 @@ function CountryCard(props) {
       }
       .share-button img {
         margin-left: 16px
+      }
+      .pointer {
+        cursor: pointer;
       }
       `}
       </style>
