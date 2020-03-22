@@ -34,13 +34,13 @@ function Home() {
         <br />
         <div className="grid">
           <Card
-            link="https://github.com/devarthurribeiro/covid19-brazil-api/"
+            link="https://covid19-brazil-api-docs.now.sh/"
             title="Documentação &rarr;"
             description="Veja a doc da api 📝"
           />
           <Card
-            link="https://github.com/devarthurribeiro"
-            title="Autor &rarr;"
+            link="https://github.com/devarthurribeiro/covid19-brazil-api/"
+            title="Github &rarr;"
             description="@devarthurribeiro 👨🏻‍💻"
           />
         </div>
