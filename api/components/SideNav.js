@@ -1,30 +1,27 @@
 import Link from 'next/link';
+import ReactTooltip from 'react-tooltip';
 
 const SideNav = () => (
   <aside className="sidenav">
     <nav className="menu">
+      <ReactTooltip place="right" type="dark" effect="solid" />
       <Link href="/">
-        <a>
+        <a data-tip="Home">
           <i className="material-icons">home</i>
         </a>
       </Link>
       <Link href="/status">
-        <a>
+        <a data-tip="Acompanhe">
           <i className="material-icons">insert_chart</i>
         </a>
       </Link>
-      <Link href="/">
-        <a>
-          <i className="material-icons">dashboard</i>
-        </a>
-      </Link>
       <Link href="https://covid19-brazil-api-docs.now.sh/">
-        <a>
+        <a data-tip="Docs">
           <i className="material-icons">book</i>
         </a>
       </Link>
       <Link href="/">
-        <a>
+        <a data-tip="Sobre">
           <i className="material-icons">info</i>
         </a>
       </Link>
