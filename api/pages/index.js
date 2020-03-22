@@ -14,6 +14,7 @@ import Footer from '../components/Footer';
 import Card from '../components/Card';
 import Countries from '../components/Countries';
 
+import Map from './map';
 
 function Home() {
   useEffect(() => {
@@ -48,6 +49,9 @@ function Home() {
           <a href="./status">Acompanhe &rarr;</a>
         </h2>
         <Countries />
+        <div className="map">
+          <Map className="map" />
+        </div>
         <h2>
           <a href="https://github.com/devarthurribeiro/covid19-brazil-api/#contribuidores">
             Equipe &rarr;
@@ -118,6 +122,11 @@ function Home() {
         color: #818181;
       }
 
+      @media (max-width: 600px) {
+        .map {
+          display: none;
+        }
+      }
     `}
       </style>
     </Layout>
