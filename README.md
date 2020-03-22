@@ -26,6 +26,7 @@ Fornecer uma API JSON com dados atualizados sobre o avanço do coronavírus no B
 ## Showcase 🎯
 
 - [APP COVID-19 Estatísticas 📱](https://github.com/robsonsilv4/covid19_statistics)
+- [SITE sitecovid19](https://sitecovid19.netlify.com/)
 
 ## Servidor de desenvolvimento 🚀
 
