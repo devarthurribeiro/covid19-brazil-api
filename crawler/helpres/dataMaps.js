@@ -31,6 +31,15 @@ const dataMaps = {
     suspects: item.s || 0,
     refuses: item.d || 0,
   }),
+  arcgis: (item) => ({
+    uid: item.cod_uf || 0,
+    uf: states.names[item.cod_uf] || '',
+    state: states.codes[item.cod_uf] || '',
+    cases: item.casos_conf || 0,
+    deaths: item.obitos || 0,
+    suspects: item.casos_susp || 0,
+    refuses: item.casos_desc || 0,
+  }),
 };
 
 module.exports = dataMaps;
