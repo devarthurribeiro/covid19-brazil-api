@@ -1,6 +1,14 @@
 import Link from 'next/link';
 import ReactTooltip from 'react-tooltip';
 
+function goBottom() {
+  window.scrollTo({
+    behavior: 'smooth',
+    left: 0,
+    top: document.body.scrollHeight,
+  });
+}
+
 const SideNav = () => (
   <aside className="sidenav">
     <nav className="menu">
@@ -21,7 +29,10 @@ const SideNav = () => (
         </a>
       </Link>
       <Link href="/">
-        <a data-tip="Sobre">
+        <a
+          onClick={goBottom}
+          data-tip="Sobre"
+        >
           <i className="material-icons">info</i>
         </a>
       </Link>
