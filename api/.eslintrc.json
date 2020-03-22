@@ -24,6 +24,7 @@
     "import/prefer-default-export": "off",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
+    "jsx-a11y/anchor-is-valid": "off",
     "no-unused-expressions": [
       "error",
       {
