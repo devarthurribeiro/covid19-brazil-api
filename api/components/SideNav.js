@@ -1,21 +1,33 @@
+import Link from 'next/link';
+
 const SideNav = () => (
   <aside className="sidenav">
     <nav className="menu">
-      <a href="/">
-        <i className="material-icons">home</i>
-      </a>
-      <a href="/status">
-        <i className="material-icons">insert_chart</i>
-      </a>
-      <a href="/">
-        <i className="material-icons">dashboard</i>
-      </a>
-      <a href="https://covid19-brazil-api-docs.now.sh/">
-        <i className="material-icons">book</i>
-      </a>
-      <a href="/">
-        <i className="material-icons">info</i>
-      </a>
+      <Link href="/">
+        <a>
+          <i className="material-icons">home</i>
+        </a>
+      </Link>
+      <Link href="/status">
+        <a>
+          <i className="material-icons">insert_chart</i>
+        </a>
+      </Link>
+      <Link href="/">
+        <a>
+          <i className="material-icons">dashboard</i>
+        </a>
+      </Link>
+      <Link href="https://covid19-brazil-api-docs.now.sh/">
+        <a>
+          <i className="material-icons">book</i>
+        </a>
+      </Link>
+      <Link href="/">
+        <a>
+          <i className="material-icons">info</i>
+        </a>
+      </Link>
     </nav>
 
     <style jsx>
