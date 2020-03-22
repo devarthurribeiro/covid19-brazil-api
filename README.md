@@ -51,8 +51,6 @@ Visite [http://localhost:3000](http://localhost:3000) com o seu navegador para v
 
 ## Docs 📄
 
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=COVID-19%20Brazil%20API&uri=https%3A%2F%2Fdevarthurribeiro.github.io%2Fcovid19-brazil-api%2FInsomnia_2020-03-22.json)
-
 - [Site](https://covid19-brazil-api-docs.now.sh/)
 
 
