@@ -49,95 +49,21 @@ yarn dev
 
 Visite [http://localhost:3000](http://localhost:3000) com o seu navegador para ver o resultado.
 
-## Documentação
+## Docs 📄
 
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=COVID-19%20Brazil%20API&uri=https%3A%2F%2Fdevarthurribeiro.github.io%2Fcovid19-brazil-api%2FInsomnia_2020-03-22.json)
 
-## Endpoints 🔌
+- [Site](https://covid19-brazil-api-docs.now.sh/)
+
+
+## Base url 🔌
 
 Todas chamadas devem usar a url base:
-
 ```
 https://covid19-brazil-api.now.sh
 ```
 
-#### Consultar dados de casos por estado
-
-```
-// GET /api/report/v1
-
-{
-"data": [
-    {
-      "uid": 35,
-      "datetime": "2020-03-18T20:00:00.000Z",
-      "uf": "SP",
-      "state": "São Paulo",
-      "cases": 164,
-      "deaths": 1,
-      "suspects": 5047,
-      "refuses": 709,
-    }
-    //...
-   ]
-}
-```
-
-#### Consultar dados de casos de todos países
-
-```
-// GET /api/report/v1/countries
-
-{
-"data": [
-    {
-      "country": "Brazil",
-      "cases": 523,
-      "confirmed": 529,
-      "deaths": 4,
-      "recovered": 2,
-      "updated_at": "2020-03-19T02:53:32.000Z"
-    }
-    //...
-   ]
-}
-```
-
-#### Consultar dados de casos por país
-
-```
-// GET /api/report/v1/:country
-
-// resultado para /api/report/v1/brazil
-{
-  "data": {
-    "country": "Brazil",
-    "cases": 523,
-    "confirmed": 529,
-    "deaths": 4,
-    "recovered": 2,
-    "updated_at": "2020-03-19T02:53:32.000Z"
-  }
-}
-```
-
-#### Consultar status da API
-
-```
-// GET /api/status/v1
-
-{
-  "status": "ok",
-  "date": "2020-03-18T12:37:59.227Z",
-  "environment": "production",
-  "aws": {
-    "region": "us-west-1",
-    "function_version": "$LATEST"
-  }
-}
-```
-
-## License 📄
+## License 📝
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
 
