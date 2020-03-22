@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Link from 'next/link';
 
 import {
   FacebookIcon,
@@ -43,7 +44,9 @@ function Home() {
       </div>
       <br />
       <h2>
-        <a href="./status">Acompanhe &rarr;</a>
+        <Link href="./status">
+          <a>Acompanhe &rarr;</a>
+        </Link>
       </h2>
       <Countries />
       <div className="map">

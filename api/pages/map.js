@@ -1,5 +1,3 @@
-import Layout from '../components/Layout';
-
 function Map() {
   return (
     <div>
