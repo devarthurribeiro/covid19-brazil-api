@@ -130,6 +130,13 @@ function Layout({ children }) {
           grid-template-columns: 1fr;
         }
       }
+
+      @media (max-width: 768px) {
+        .columns, .content {
+          flex-flow: column;
+        }
+      }
+
     `}
       </style>
     </div>

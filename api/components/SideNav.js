@@ -76,6 +76,28 @@ const SideNav = () => (
         background-color: #202124;
       }
 
+      @media (max-width: 768px) {
+        .sidenav {
+          position: fixed;
+          top: auto;
+          bottom: 0;
+          height: auto;
+          padding: 0;
+          width: 100%;
+          background-color: #202124;
+          box-shadow: 0 2px 6px 0 rgba(0,0,0,.45);
+        }
+        .menu {
+          flex-flow: row nowrap;
+          overflow: auto;
+          justify-content: space-between;
+          background-color: rgba(0,0,0,.1);
+        }
+        nav a {
+          background-color: transparent;
+        }
+      }
+
       @media (max-width: 600px) {
         footer {
           flex-direction: column;
