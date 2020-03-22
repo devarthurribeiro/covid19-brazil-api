@@ -17,6 +17,7 @@ jobs:
         env:
           MS_URL: http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js
           OD_URL: https://olhardigital.com.br/site/arquivos/json/covid19.json
+          ARCGIS_URL: https://services.arcgis.com/lqRTrQp2HrfnJt8U/arcgis/rest/services/COVID_19_Backup/FeatureServer/0/query?f=json&where=casos_susp>=0&returnGeometry=false&outFields=*&outSR=102100&resultType=tile 
       - uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
         with:
           add: 'data'  
