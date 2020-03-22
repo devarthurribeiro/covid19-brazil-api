@@ -58,30 +58,32 @@ function Home() {
         </a>
       </h2>
       <div className="flex-center team">
-        <div className="person">
-          <a href="https://github.com/devarthurribeiro">
-            <img src="https://avatars1.githubusercontent.com/u/12974798?s=460&u=6a69934913c6f56d74fdf9c80793881d4cfb7bf6&v=4" alt="Arthur Ribeiro" />
-          </a>
-          <h3>Arthur Ribeiro</h3>
-          <span>Autor</span>
-          <p>
-            I love creating things.
-          </p>
-          <div className="flex-center">
-            <a href="http://wa.me/5584991230249">
-              <WhatsappIcon
-                size={40}
-                round
-              />
+        <Card>
+          <div className="person">
+            <a href="https://github.com/devarthurribeiro">
+              <img src="https://avatars1.githubusercontent.com/u/12974798?s=460&u=6a69934913c6f56d74fdf9c80793881d4cfb7bf6&v=4" alt="Arthur Ribeiro" />
             </a>
-            <a href="https://www.facebook.com/devarthuribeiro">
-              <FacebookIcon size={40} round />
-            </a>
-            <a href="https://twitter.com/devArthurR">
-              <TwitterIcon size={40} round />
-            </a>
+            <h3>Arthur Ribeiro</h3>
+            <span>Autor</span>
+            <p>
+              I love creating things.
+            </p>
+            <div className="flex-center">
+              <a href="http://wa.me/5584991230249">
+                <WhatsappIcon
+                  size={40}
+                  round
+                />
+              </a>
+              <a href="https://www.facebook.com/devarthuribeiro">
+                <FacebookIcon size={40} round />
+              </a>
+              <a href="https://twitter.com/devArthurR">
+                <TwitterIcon size={40} round />
+              </a>
+            </div>
           </div>
-        </div>
+        </Card>
       </div>
       <br />
 
