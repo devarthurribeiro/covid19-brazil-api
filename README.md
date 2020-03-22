@@ -8,6 +8,12 @@
 
 [English version](./README-US.md) 🇺🇸
 
+<div align="center">
+  <br>
+    <img src="static/screenshot.png" alt="Screenshot1" width="100%">
+  <br>
+</div>
+
 ## Motivo 🤔
 
 Fornecer uma API JSON com dados atualizados sobre o avanço do coronavírus no Brasil, assim como em outros países.

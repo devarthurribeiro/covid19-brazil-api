@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import SideNav from './SideNav';
+import Footer from './Footer';
 
 function Layout({ children }) {
   return (
@@ -22,13 +24,52 @@ function Layout({ children }) {
           content="API para notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil."
         />
       </Head>
+      <div className="wrapper">
+        <div className="content">
+          <div className="columns">
+            <SideNav />
+            <div className="main">
+              {children}
 
-      {children}
+              <Footer />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <style jsx global>
         {`
+
+        @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+        .material-icons {
+          font-family: "Material Icons";
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;
+          /* Preferred icon size */
+          display: inline-block;
+          line-height: 1;
+          text-transform: none;
+          letter-spacing: normal;
+          word-wrap: normal;
+          white-space: nowrap;
+          direction: ltr;
+
+          /* Support for all WebKit browsers. */
+          -webkit-font-smoothing: antialiased;
+          /* Support for Safari and Chrome. */
+          text-rendering: optimizeLegibility;
+
+          /* Support for Firefox. */
+          -moz-osx-font-smoothing: grayscale;
+
+          /* Support for IE. */
+          font-feature-settings: "liga";
+        }
       html,
       body {
-        background-color: #000;
+        background-color: #202124;
         color: #e5e5e5;
         padding: 0;
         margin: 0;
@@ -45,9 +86,25 @@ function Layout({ children }) {
         text-decoration: none;
       }
 
-      main {
-        max-width: 90%;
-        margin: 0 auto;
+      .wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+      }
+
+
+      .columns, .content {
+        display: flex;
+        flex: 1;
+      }
+
+      .main {
+        display: flex;
+        flex-flow: column;
+        flex: 1;
+        order: 2;
+        position: relative;
+        padding: 0 16px;
       }
 
       .flex-center {
@@ -73,6 +130,13 @@ function Layout({ children }) {
           grid-template-columns: 1fr;
         }
       }
+
+      @media (max-width: 768px) {
+        .columns, .content {
+          flex-flow: column;
+        }
+      }
+
     `}
       </style>
     </div>

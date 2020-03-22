@@ -17,13 +17,12 @@ function Card({
         {`
         .card {
           width: 100%;
-          background-color: #0a0a0a;
+          background-color: rgba(0, 0, 0, 0.2);
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #818181;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
         }

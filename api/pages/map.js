@@ -1,8 +1,6 @@
-import Layout from '../components/Layout';
-
 function Map() {
   return (
-    <Layout>
+    <div>
       <h2>Mapa &rarr;</h2>
       <div className="flex-center">
         <main>
@@ -23,7 +21,7 @@ function Map() {
         `}
 
       </style>
-    </Layout>
+    </div>
   );
 }
 
