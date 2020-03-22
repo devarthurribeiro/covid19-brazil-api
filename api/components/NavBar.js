@@ -4,7 +4,7 @@ const NavBar = () => (
     <nav>
       <div className="item">
         <h1 className="title">
-          <a href="./">COVID-19 Brazil</a>
+          <a href="./">COVID-19 Brazil API</a>
         </h1>
         <img src="/logo.svg" width="40px" className="logo" alt="logo" />
       </div>
