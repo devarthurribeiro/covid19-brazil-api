@@ -6,6 +6,12 @@
   <strong>Notification of cases of disease by the coronavirus 2019 (COVID-19) in Brazil and worldwide.</strong>
 </p>
 
+<div align="center">
+  <br>
+    <img src="static/screenshot.png" alt="Screenshot1" width="100%">
+  <br>
+</div>
+
 ## Reason 🤔
 
 Provide a json API with updated data on advancement of coronavirus Brazil. Just like in other countries.
