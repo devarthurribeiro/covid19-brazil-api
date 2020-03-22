@@ -49,6 +49,10 @@ yarn dev
 
 Visite [http://localhost:3000](http://localhost:3000) com o seu navegador para ver o resultado.
 
+## Documentação
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=COVID-19%20Brazil%20API&uri=https%3A%2F%2Fdevarthurribeiro.github.io%2Fcovid19-brazil-api%2FInsomnia_2020-03-22.json)
+
 ## Endpoints 🔌
 
 Todas chamadas devem usar a url base:
