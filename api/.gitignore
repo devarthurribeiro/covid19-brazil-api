@@ -26,5 +26,5 @@ yarn-error.log*
 
 .now
 
-/public/workbox-*.js
-/public/sw.js
+/public/workbox-*
+/public/sw*
