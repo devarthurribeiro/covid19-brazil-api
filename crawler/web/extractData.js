@@ -52,7 +52,7 @@ async function searchNews() {
 
 async function start() {
   const links = await searchNews();
-
+  console.log(links);
   return new Promise((resolve) => {
     if (links[0]) {
       convertUrl(`${baseUrl + links[0]}`, (siteTableData) => {
@@ -65,5 +65,10 @@ async function start() {
     }
   });
 }
+
+// async function test() {
+//   console.log(JSON.stringify(await start()), 2, 2);
+// }
+// test();
 
 module.exports = start;

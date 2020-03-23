@@ -55,13 +55,17 @@ function getMoreUpdatedReport(reports) {
 
   return (r || comparationReport[0]);
 }
+const extractData = require('./web/extractData');
 
 async function startCrawler() {
-  const data = await fetchAlldata(datasets);
+  const data = await Promise.all([extractData()]);
+  console.log(data);
 
   const filename = getFileName(new Date());
 
   const validReports = data.filter((report) => (report.length > 0));
+
+  console.log(R.map(console.table, validReports));
 
   if (validReports.length > 0) {
     const newReport = getMoreUpdatedReport(validReports);

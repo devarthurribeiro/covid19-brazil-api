@@ -1,6 +1,6 @@
 const withPWA = require('next-pwa');
 
-module.exports = withPWA({
+const settings = {
   env: {
     baseUrlCSSE: 'https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases/FeatureServer/2/',
     baseUrlMs: 'https://devarthurribeiro.github.io/covid19-brazil-api/data/ms/',
@@ -11,4 +11,6 @@ module.exports = withPWA({
   pwa: {
     dest: 'public',
   },
-});
+};
+
+module.exports = process.env.NODE_ENV === 'development' ? settings : withPWA(settings);

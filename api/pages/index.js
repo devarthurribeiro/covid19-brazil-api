@@ -23,24 +23,14 @@ function Home() {
     <Layout className="container">
 
       <NavBar />
-      <h2>Sobre</h2>
       <p className="description">
         Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil e mundo.
       </p>
-      <br />
-      <div className="grid">
-        <Card
-          link="https://covid19-brazil-api-docs.now.sh/"
-          title="Documentação &rarr;"
-          description="Veja a doc da api 📝"
-        />
-        <Card
-          link="https://github.com/devarthurribeiro/covid19-brazil-api/"
-          title="Github &rarr;"
-          description="@devarthurribeiro 👨🏻‍💻"
-        />
+      <div className="flex-center">
+        <div className="doc-button">
+          <a href="https://covid19-brazil-api-docs.now.sh/">Documentação</a>
+        </div>
       </div>
-      <br />
       <h2>
         <Link href="./status">
           <a>Acompanhe &rarr;</a>
@@ -52,7 +42,7 @@ function Home() {
           Equipe &rarr;
         </a>
       </h2>
-      <div className="flex-center team">
+      <div className="grid team">
         <Card>
           <div className="person">
             <a href="https://github.com/devarthurribeiro">
@@ -79,6 +69,49 @@ function Home() {
             </div>
           </div>
         </Card>
+        <Card>
+          <div className="person">
+            <a href="https://github.com/devarthurribeiro">
+              <img src="./pedro.png" alt="Arthur Ribeiro" />
+            </a>
+            <h3>Pedro Queiroz</h3>
+            <span>Divulgação</span>
+            <p>
+              A Law student.
+            </p>
+            <div className="flex-center">
+              <a href="http://wa.me/55848622-7079">
+                <WhatsappIcon
+                  size={40}
+                  round
+                />
+              </a>
+              <a href="https://www.facebook.com/pedrohenriqueq1">
+                <FacebookIcon size={40} round />
+              </a>
+              <a href="https://twitter.com/PedroHe30974775">
+                <TwitterIcon size={40} round />
+              </a>
+            </div>
+          </div>
+        </Card>
+        <Card>
+          <div className="person flex-center">
+            <h3>Junte-se ao time</h3>
+            <span>Faça parte desse projeto</span>
+            <p>
+              Grupo no whatsapp
+            </p>
+            <div>
+              <a href="https://chat.whatsapp.com/L7AY3Bpv12Y7JzjNTjbdBX">
+                <WhatsappIcon
+                  size={40}
+                  round
+                />
+              </a>
+            </div>
+          </div>
+        </Card>
       </div>
       <br />
 
@@ -87,6 +120,10 @@ function Home() {
       .container {
         min-height: 100vh;
         padding: 0 .75em
+      }
+
+      .team {
+        grid-template-columns: 1fr 1fr 1fr;
       }
 
       .team h3, p {
@@ -113,6 +150,21 @@ function Home() {
       .description {
         font-size: 1.5rem;
         color: #818181;
+      }
+
+      .doc-button {
+        background-color: rgba(79, 250, 123, .8) !important;
+        cursor: pointer;
+        padding: 16px;
+        border-radius: 4px;
+        color: #19191d;
+        font-weight: 600;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(79, 250, 123, 0.2);
+        transition: all .2s;
+      }
+
+      .doc-button:hover {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(79, 250, 123, 0.4);
       }
 
       @media (max-width: 600px) {

@@ -116,7 +116,7 @@ function Layout({ children }) {
           flex-direction: column;
         }
         .grid {
-          grid-template-columns: 1fr;
+          grid-template-columns: 1fr !important;
         }
       }
 
