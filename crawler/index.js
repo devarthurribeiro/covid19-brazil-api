@@ -3,7 +3,9 @@ require('dotenv').config();
 const R = require('ramda');
 
 const parseData = require('./helpres/parserData');
-const { fetchAlldata, saveReport } = require('./util');
+const { fetchAlldata, saveReport, getFileName } = require('./util');
+
+const orderByCases = (list) => list.sort((a, b) => (a.cases < b.cases ? 1 : -1));
 
 const datasets = [
   {
@@ -57,8 +59,7 @@ function getMoreUpdatedReport(reports) {
 async function startCrawler() {
   const data = await fetchAlldata(datasets);
 
-  const reportDate = new Date().toISOString().slice(0, 10).split('-');
-  const filename = `${reportDate[0]}${reportDate[1]}${reportDate[2]}.json`;
+  const filename = getFileName(new Date());
 
   const validReports = data.filter((report) => (report.length > 0));
 
@@ -67,12 +68,12 @@ async function startCrawler() {
     // eslint-disable-next-line global-require
     const latestReportCount = sumTotalCases(require('../data/ms/report.json'));
 
+    console.table(newReport.report);
 
     if (newReport.totalCases > latestReportCount) {
-      console.table(newReport.report);
       console.log(`Total cases: ${newReport.totalCases}`);
 
-      saveReport(filename, newReport.report);
+      saveReport(`../data/ms/${filename}`, orderByCases(newReport.report));
     } else {
       console.log('⚠️ Not avalible update!');
     }

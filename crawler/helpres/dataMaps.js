@@ -5,8 +5,8 @@ function getStateInfo(uf) {
   Object.keys(states.codes).forEach((key) => {
     if (states.codes[key] === uf.toUpperCase()) {
       state = {
-        uf: states.codes[key],
         uid: parseInt(key, 10),
+        uf: states.codes[key],
         state: states.names[key],
       };
     }
@@ -39,6 +39,11 @@ const dataMaps = {
     deaths: item.obitos || 0,
     suspects: item.casos_susp || 0,
     refuses: item.casos_desc || 0,
+  }),
+  msSite: (item) => ({
+    ...getStateInfo(item['1']),
+    cases: parseInt(item['2'], 10) || 0,
+    deaths: parseInt(item['3'], 10) || 0,
   }),
 };
 
