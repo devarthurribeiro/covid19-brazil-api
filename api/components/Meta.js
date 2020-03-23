@@ -17,7 +17,7 @@ export default () => (
 
     <meta name="application-name" content="COVID19 BR" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="COVID19 BR" />
     <link rel="apple-touch-icon" href="./logo512x512.png" />
     <meta name="format-detection" content="telephone=no" />
