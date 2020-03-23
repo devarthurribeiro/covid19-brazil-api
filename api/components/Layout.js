@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import SideNav from './SideNav';
 import Footer from './Footer';
+import Meta from './Meta';
 
 function Layout({ children }) {
   return (
@@ -8,21 +9,8 @@ function Layout({ children }) {
       <Head>
         <title>COVID-19 Brazil API</title>
         <link rel="icon" href="/favicon.png" />
-
-        <meta name="google-site-verification" content="jGYghdq3AQdS8dNTBrHS4r729QN_u5coQPjY9SeiYcs" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="keywords"
-          content="api, covid19, covid-19, brasil, gratis, json, coronavirus"
-        />
-        <meta
-          name="author"
-          content="Arthur Ribeiro, devarthurribeiro@gmail.com"
-        />
-        <meta
-          name="description"
-          content="API para notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil."
-        />
+        <link rel="manifest" href="/manifest.json" />
+        <Meta />
       </Head>
       <div className="wrapper">
         <div className="content">
@@ -75,6 +63,7 @@ function Layout({ children }) {
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
           Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        -webkit-user-select: none;
       }
 
       * {
