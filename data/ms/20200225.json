@@ -1,8 +1,8 @@
 [
   {
     "uid": 23,
-    "uf": "Ceará",
-    "state": "CE",
+    "uf": "CE",
+    "state": "Ceará",
     "cases": 0,
     "deaths": 0,
     "suspects": 0,
@@ -13,8 +13,8 @@
   },
   {
     "uid": 31,
-    "uf": "Minas Gerais",
-    "state": "MG",
+    "uf": "MG",
+    "state": "Minas Gerais",
     "cases": 0,
     "deaths": 0,
     "suspects": 0,
@@ -25,8 +25,8 @@
   },
   {
     "uid": 33,
-    "uf": "Rio de Janeiro",
-    "state": "RJ",
+    "uf": "RJ",
+    "state": "Rio de Janeiro",
     "cases": 0,
     "deaths": 0,
     "suspects": 0,
@@ -37,8 +37,8 @@
   },
   {
     "uid": 35,
-    "uf": "São Paulo",
-    "state": "SP",
+    "uf": "SP",
+    "state": "São Paulo",
     "cases": 0,
     "deaths": 0,
     "suspects": 4,
@@ -49,8 +49,8 @@
   },
   {
     "uid": 41,
-    "uf": "Paraná",
-    "state": "PR",
+    "uf": "PR",
+    "state": "Paraná",
     "cases": 0,
     "deaths": 0,
     "suspects": 0,
@@ -61,8 +61,8 @@
   },
   {
     "uid": 42,
-    "uf": "Santa Catarina",
-    "state": "SC",
+    "uf": "SC",
+    "state": "Santa Catarina",
     "cases": 0,
     "deaths": 0,
     "suspects": 0,
@@ -73,8 +73,8 @@
   },
   {
     "uid": 43,
-    "uf": "Rio Grande do Sul",
-    "state": "RS",
+    "uf": "RS",
+    "state": "Rio Grande do Sul",
     "cases": 0,
     "deaths": 0,
     "suspects": 0,
@@ -85,8 +85,8 @@
   },
   {
     "uid": 53,
-    "uf": "Distrito Federal",
-    "state": "DF",
+    "uf": "DF",
+    "state": "Distrito Federal",
     "cases": 0,
     "deaths": 0,
     "suspects": 0,
