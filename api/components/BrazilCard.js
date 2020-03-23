@@ -71,6 +71,10 @@ saude.gov.br
     );
   }
 
+  function getFlag(uf) {
+    return `https://devarthurribeiro.github.io/covid19-brazil-api/static/flags/${uf}.png`;
+  }
+
   return (
     <Card
       link=""
@@ -102,8 +106,9 @@ saude.gov.br
           <table className="tbl-header">
             {data.map((report) => (
               <tr>
-                <td>
-                  {report.uf}
+                <td className="flex">
+                  <img src={getFlag(report.uf)} alt="uf flag" width="20px" />
+                  <span>{report.uf}</span>
                 </td>
                 <td className="text-rigth">
                   {report.cases}
@@ -130,6 +135,10 @@ saude.gov.br
 
       <style jsx>
         {`
+          .flex {
+            display: flex;
+            flex-direction: row;
+          }
           table {
             width:100%;
             table-layout: fixed;
@@ -145,6 +154,9 @@ saude.gov.br
             font-size: 12px;
             color: #fff;
             border-bottom: solid 1px rgba(255,255,255,0.1);
+          }
+          td > img {
+            margin-right: 8px;
           }
           .table-scroll {
             max-height: 600px;
