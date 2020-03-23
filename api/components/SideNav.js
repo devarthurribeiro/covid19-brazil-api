@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import Link from 'next/link';
 import ReactTooltip from 'react-tooltip';
 
@@ -30,7 +32,7 @@ const SideNav = () => (
       </Link>
       <Link href="/">
         <a
-          onClick={goBottom}
+          onClick={() => { goBottom(); }}
           data-tip="Sobre"
         >
           <i className="material-icons">info</i>

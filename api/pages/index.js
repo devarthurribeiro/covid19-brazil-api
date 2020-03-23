@@ -12,9 +12,7 @@ import analytic from '../util/analytic';
 import Layout from '../components/Layout';
 import NavBar from '../components/NavBar';
 import Card from '../components/Card';
-import Countries from '../components/Countries';
-
-import Map from './map';
+import Reports from '../components/Reports';
 
 function Home() {
   useEffect(() => {
@@ -48,10 +46,7 @@ function Home() {
           <a>Acompanhe &rarr;</a>
         </Link>
       </h2>
-      <Countries />
-      <div className="map">
-        <Map className="map" />
-      </div>
+      <Reports />
       <h2>
         <a href="https://github.com/devarthurribeiro/covid19-brazil-api/#contribuidores">
           Equipe &rarr;

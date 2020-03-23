@@ -25,12 +25,12 @@ function Card({
           text-decoration: none;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
+          border: 1px solid rgba(0, 0, 0, 0.2);
         }
 
         .card:hover,
         .card:focus,
         .card:active {
-          color: #4ffa7b;
           border-color: #4ffa7b;
         }
 

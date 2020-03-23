@@ -49,23 +49,22 @@ function CountryCard(props) {
 
   function shareData() {
     return (`
-      *Casos coronavírus no ${data.country} ${mapBrands[data.country]}*
+*Casos coronavírus no ${data.country} ${mapBrands[data.country]}*
 
-      🕐 *Atualizado* ${formatDate(data.updated_at)}
+🕐 *Atualizado* ${formatDate(data.updated_at)}
 
-      ✅ *${data.confirmed}* Confirmados
-      🚨 *${data.cases}* Ativos
-      ♻️ *${data.recovered}* Recuperados
-      💀 *${data.deaths}* Mortes
+✅ *${data.confirmed}* Confirmados
+🚨 *${data.cases}* Ativos
+♻️ *${data.recovered}* Recuperados
+💀 *${data.deaths}* Mortes
 
-      📊 *Fonte:* WHO, CDC, ECDC, NHC and DXY
-      covid19-brazil-api.now.sh/status
+📊 *Fonte:* WHO, CDC, ECDC, NHC and DXY
+covid19-brazil-api.now.sh/status
 
-      ⚠️ *Evite fake news*
+⚠️ *Evite fake news*
 
-      ☢️ *Sobre a doença*
-      coronavirus.saude.gov.br/index.php/sobre-a-doenca
-
+☢️ *Sobre a doença*
+coronavirus.saude.gov.br/index.php/sobre-a-doenca
     `);
   }
 

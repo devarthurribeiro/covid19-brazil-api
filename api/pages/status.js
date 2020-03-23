@@ -5,7 +5,7 @@ import analytic from '../util/analytic';
 
 import NavBar from '../components/NavBar';
 import Layout from '../components/Layout';
-import Countries from '../components/Countries';
+import Reports from '../components/Reports';
 
 function Status() {
   useEffect(() => {
@@ -17,8 +17,8 @@ function Status() {
       <Layout className="container">
         <NavBar />
         <main>
-          <h2>Países</h2>
-          <Countries />
+          <h2>Dados</h2>
+          <Reports />
         </main>
       </Layout>
     </div>
