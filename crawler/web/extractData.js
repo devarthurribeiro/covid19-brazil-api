@@ -12,7 +12,9 @@ const baseUrl = 'https://www.saude.gov.br';
 const formatDate = (d) => (d.toISOString().slice(0, 10));
 
 const searchUrl = () => {
-  const date = formatDate(new Date());
+  const utcDate = new Date();
+  utcDate.setHours(utcDate.getHours() - 3);
+  const date = formatDate(utcDate);
   return `${baseUrl}/noticias?filter-search=&limit=20&filter-start_date=${date}&filter-end_date=${date}+23%3A59%3A59`;
 };
 
@@ -52,9 +54,10 @@ async function searchNews() {
 
 async function start() {
   const links = await searchNews();
-  console.log(links);
+  console.log(searchUrl());
   return new Promise((resolve) => {
     if (links[0]) {
+      console.log(`Request to ${baseUrl + links[0]}`);
       convertUrl(`${baseUrl + links[0]}`, (siteTableData) => {
         if (siteTableData[0]) {
           resolve(parseData(siteTableData[0]) || []);
@@ -65,10 +68,5 @@ async function start() {
     }
   });
 }
-
-// async function test() {
-//   console.log(JSON.stringify(await start()), 2, 2);
-// }
-// test();
 
 module.exports = start;
