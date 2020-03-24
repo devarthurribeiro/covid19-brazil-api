@@ -24,7 +24,7 @@ Fornecer uma API JSON com dados atualizados sobre o avanço do coronavírus no B
 - [Ministério da Saúde](http://plataforma.saude.gov.br/novocoronavirus)
 
 ## Showcase 🎯
-
+- [COVID19 Tracker](https://apex.oracle.com/pls/apex/f?p=82495)
 - [APP COVID-19 Estatísticas 📱](https://github.com/robsonsilv4/covid19_statistics)
 - [SITE sitecovid19](https://sitecovid19.netlify.com/)
 
