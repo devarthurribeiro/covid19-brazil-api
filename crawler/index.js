@@ -55,28 +55,21 @@ function getMoreUpdatedReport(reports) {
 
   return (r || comparationReport[0]);
 }
-const extractData = require('./web/extractData');
 
 async function startCrawler() {
-  const data = await Promise.all([extractData()]);
-  console.log(data);
+  const data = await fetchAlldata(datasets);
 
   const filename = getFileName(new Date());
 
   const validReports = data.filter((report) => (report.length > 0));
-
-  console.log(R.map(console.table, validReports));
+  console.log(data);
 
   if (validReports.length > 0) {
     const newReport = getMoreUpdatedReport(validReports);
     // eslint-disable-next-line global-require
     const latestReportCount = sumTotalCases(require('../data/ms/report.json'));
-
-    console.table(newReport.report);
-
     if (newReport.totalCases > latestReportCount) {
       console.log(`Total cases: ${newReport.totalCases}`);
-
       saveReport(`../data/ms/${filename}`, orderByCases(newReport.report));
     } else {
       console.log('⚠️ Not avalible update!');

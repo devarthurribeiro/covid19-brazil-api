@@ -2,7 +2,6 @@ const fs = require('fs');
 const axios = require('axios');
 const extractData = require('../web/extractData');
 
-
 async function fetchAlldata(sources) {
   const requests = sources.map((source) => {
     console.log(`request to ${source.url}`);
@@ -11,11 +10,8 @@ async function fetchAlldata(sources) {
       .then(({ data }) => source.formatBody(data))
       .catch(() => []);
   });
-
-  requests.push(extractData);
-
   try {
-    return await Promise.all(requests);
+    return await Promise.all([...requests, extractData()]);
   } catch (error) {
     throw new Error('requests_error');
   }
