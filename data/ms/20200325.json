@@ -70,6 +70,16 @@
     "datetime": "2020-03-25T03:04:46.708Z"
   },
   {
+    "uid": 29,
+    "uf": "BA",
+    "state": "Bahia",
+    "cases": 84,
+    "deaths": 0,
+    "suspects": 573,
+    "refuses": 36,
+    "datetime": "2020-03-25T03:04:46.708Z"
+  },
+  {
     "uid": 41,
     "uf": "PR",
     "state": "Paraná",
@@ -77,16 +87,6 @@
     "deaths": 0,
     "suspects": 400,
     "refuses": 119,
-    "datetime": "2020-03-25T03:04:46.708Z"
-  },
-  {
-    "uid": 29,
-    "uf": "BA",
-    "state": "Bahia",
-    "cases": 76,
-    "deaths": 0,
-    "suspects": 573,
-    "refuses": 36,
     "datetime": "2020-03-25T03:04:46.708Z"
   },
   {
