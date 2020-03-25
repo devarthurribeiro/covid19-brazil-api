@@ -30,6 +30,11 @@ const SideNav = () => (
           <i className="material-icons">book</i>
         </a>
       </Link>
+      <Link href="/logs">
+        <a data-tip="Logs da API">
+          <i className="material-icons">dashboard</i>
+        </a>
+      </Link>
       <Link href="/">
         <a
           onClick={() => { goBottom(); }}
