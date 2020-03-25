@@ -27,9 +27,9 @@ function Home() {
         Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil e mundo.
       </p>
       <div className="flex-center">
-        <div className="doc-button">
-          <a href="https://covid19-brazil-api-docs.now.sh/">Documentação</a>
-        </div>
+        <a href="https://covid19-brazil-api-docs.now.sh/" className="doc-button">
+          Documentação
+        </a>
       </div>
       <h2>
         <Link href="./status">
