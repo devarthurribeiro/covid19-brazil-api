@@ -24,13 +24,13 @@ const sources = [
     url: process.env.OD_URL,
     formatBody: (body) => parseData(body, undefined, 'od'),
   },
-  {
-    url: process.env.ARCGIS_URL,
-    formatBody: (body) => {
-      const parsedBody = body.features.map(({ attributes }) => attributes);
-      return parseData(parsedBody, undefined, 'arcgis');
-    },
-  },
+  // {
+  //   url: process.env.ARCGIS_URL,
+  //   formatBody: (body) => {
+  //     const parsedBody = body.features.map(({ attributes }) => attributes);
+  //     return parseData(parsedBody, undefined, 'arcgis');
+  //   },
+  // },
 ];
 
 module.exports = sources;
