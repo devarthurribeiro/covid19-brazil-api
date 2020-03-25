@@ -1,4 +1,4 @@
-name: Update reports
+name: Data extract
 
 on:
   schedule:
