@@ -42,7 +42,7 @@ async function searchNews() {
   if (data.includes('casos confirmados')) {
     const $ = cheerio.load(data);
 
-    $('.tileHeadline a').each(function () {
+    $('.tileHeadline a').each(function find() {
       const url = $(this).attr('href');
       if (url.includes('confirmados')) {
         urls.push(url);
