@@ -14,7 +14,7 @@ function goBottom() {
 const SideNav = () => (
   <aside className="sidenav">
     <nav className="menu">
-      <ReactTooltip place="right" type="dark" effect="solid" />
+      <ReactTooltip place="right" type="dark" effect="solid" backgroundColor="#000" />
       <Link href="/">
         <a data-tip="Home">
           <i className="material-icons">home</i>
