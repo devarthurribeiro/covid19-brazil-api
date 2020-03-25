@@ -27,7 +27,6 @@ function Layout({ children }) {
 
       <style jsx global>
         {`
-
         @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
         .material-icons {
@@ -110,7 +109,7 @@ function Layout({ children }) {
         gap: 20px;
       }
 
-      @media (max-width: 600px) {
+      @media (max-width: 768px) {
         .flex {
           width: 100%;
           flex-direction: column;
@@ -118,9 +117,6 @@ function Layout({ children }) {
         .grid {
           grid-template-columns: 1fr !important;
         }
-      }
-
-      @media (max-width: 768px) {
         .columns, .content {
           flex-flow: column;
         }

@@ -1,18 +1,12 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 
-import {
-  FacebookIcon,
-  WhatsappIcon,
-  TwitterIcon,
-} from 'react-share';
-
 import analytic from '../util/analytic';
 
 import Layout from '../components/Layout';
 import NavBar from '../components/NavBar';
-import Card from '../components/Card';
 import Reports from '../components/Reports';
+import Team from '../components/Team';
 
 function Home() {
   useEffect(() => {
@@ -42,109 +36,13 @@ function Home() {
           Equipe &rarr;
         </a>
       </h2>
-      <div className="grid team">
-        <Card>
-          <div className="person">
-            <a href="https://github.com/devarthurribeiro">
-              <img src="https://avatars1.githubusercontent.com/u/12974798?s=460&u=6a69934913c6f56d74fdf9c80793881d4cfb7bf6&v=4" alt="Arthur Ribeiro" />
-            </a>
-            <h3>Arthur Ribeiro</h3>
-            <span>Autor</span>
-            <p>
-              I love creating things.
-            </p>
-            <div className="flex-center">
-              <a href="http://wa.me/5584991230249">
-                <WhatsappIcon
-                  size={40}
-                  round
-                />
-              </a>
-              <a href="https://www.facebook.com/devarthuribeiro">
-                <FacebookIcon size={40} round />
-              </a>
-              <a href="https://twitter.com/devArthurR">
-                <TwitterIcon size={40} round />
-              </a>
-            </div>
-          </div>
-        </Card>
-        <Card>
-          <div className="person">
-            <a href="https://github.com/devarthurribeiro">
-              <img src="./pedro.png" alt="Arthur Ribeiro" />
-            </a>
-            <h3>Pedro Queiroz</h3>
-            <span>Divulgação</span>
-            <p>
-              A Law student.
-            </p>
-            <div className="flex-center">
-              <a href="http://wa.me/55848622-7079">
-                <WhatsappIcon
-                  size={40}
-                  round
-                />
-              </a>
-              <a href="https://www.facebook.com/pedrohenriqueq1">
-                <FacebookIcon size={40} round />
-              </a>
-              <a href="https://twitter.com/PedroHe30974775">
-                <TwitterIcon size={40} round />
-              </a>
-            </div>
-          </div>
-        </Card>
-        <Card>
-          <div className="person flex-center">
-            <h3>Junte-se ao time</h3>
-            <span>Faça parte desse projeto</span>
-            <p>
-              Grupo no whatsapp
-            </p>
-            <div>
-              <a href="https://chat.whatsapp.com/L7AY3Bpv12Y7JzjNTjbdBX">
-                <WhatsappIcon
-                  size={40}
-                  round
-                />
-              </a>
-            </div>
-          </div>
-        </Card>
-      </div>
+      <Team />
       <br />
-
       <style jsx>
         {`
       .container {
         min-height: 100vh;
         padding: 0 .75em
-      }
-
-      .team {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-
-      .team h3, p {
-        margin: 8px
-      }
-
-      .team span {
-        margin-bottom: 6px;
-        color: #818181;
-      }
-
-      .team img {
-        width: 160px;
-        heigth: auto;
-        border-radius: 50%;
-      }
-
-      .team .person {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
       }
 
       .description {

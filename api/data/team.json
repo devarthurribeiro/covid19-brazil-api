@@ -1,0 +1,19 @@
+[
+  {
+    "name":"Arthur Ribeiro",
+    "role":"Autor",
+    "description":"I love creating things.",
+    "img":"https://avatars1.githubusercontent.com/u/12974798?s=460&u=6a69934913c6f56d74fdf9c80793881d4cfb7bf6&v=4",
+    "twitter":"devArthurR",
+    "facebook":"devarthuribeiro",
+    "whatsapp":"+5584991230249"
+  },
+  {
+    "name":"Pedro Queiroz",
+    "description":"A Law student.",
+    "img":"https://covid19-brazil-api.now.sh/pedro.png",
+    "twitter":"PedroHe30974775",
+    "facebook":"pedrohenriqueq1",
+    "whatsapp":"+55848622-7079"
+  }
+]
