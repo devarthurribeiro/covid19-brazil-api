@@ -104,7 +104,7 @@
     "uf": "PE",
     "state": "Pernambuco",
     "cases": 42,
-    "deaths": 0,
+    "deaths": 1,
     "suspects": 89,
     "refuses": 23,
     "datetime": "2020-03-25T03:04:46.708Z"
