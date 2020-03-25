@@ -8,9 +8,18 @@
 
 [English version](./README-US.md) 🇺🇸
 
+## ⚠️ Atenção
+
+O governo retirou a [página](http://plataforma.saude.gov.br/novocoronavirus/) com estatísticas oficiais. Os dados antigos tinham casos suspeitos e descartados. Na nova divulgação do do gorverno, são dilvulgados apenas o númeor de casos e de mortes.
+Portando os campos **suspects** e **refuses** não são consistentes, a partir do relatório de **18/20/2020** data que a plataforma do governo parou.
+
+## [Site](https://covid19-brazil-api.now.sh/)
+
+Página de divulção do projeto mostrando dados que são consumidos da api.
+
 <div align="center">
   <br>
-    <img src="static/screenshot.png" alt="Screenshot1" width="100%">
+    <img src="static/screenshot.png" alt="Screenshot1" width="80%">
   <br>
 </div>
 
