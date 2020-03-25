@@ -24,9 +24,16 @@ Fornecer uma API JSON com dados atualizados sobre o avanço do coronavírus no B
 - [Ministério da Saúde](http://plataforma.saude.gov.br/novocoronavirus)
 
 ## Showcase 🎯
+
+### Sites 💻
+
+- [Levantelab](https://levantelab.com.br/mapa_coronavirus)
 - [COVID19 Tracker](https://apex.oracle.com/pls/apex/f?p=82495)
-- [APP COVID-19 Estatísticas 📱](https://github.com/robsonsilv4/covid19_statistics)
 - [SITE sitecovid19](https://sitecovid19.netlify.com/)
+
+### Apps 📱
+
+- [APP COVID-19 Estatísticas 📱](https://github.com/robsonsilv4/covid19_statistics)
 
 ## Servidor de desenvolvimento 🚀
 
