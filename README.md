@@ -15,7 +15,7 @@ Portando os campos **suspects** e **refuses** não são consistentes, a partir d
 
 ## [Site](https://covid19-brazil-api.now.sh/)
 
-Página de divulção do projeto mostrando dados que são consumidos da api.
+Página de divulção do projeto mostrando dados que são consumidos via api.
 
 <div align="center">
   <br>
@@ -27,10 +27,10 @@ Página de divulção do projeto mostrando dados que são consumidos da api.
 
 Fornecer uma API JSON com dados atualizados sobre o avanço do coronavírus no Brasil, assim como em outros países.
 
-## Datasets 💽
+## Datasource 💽
 
 - [CSSEGISandData](https://github.com/CSSEGISandData/COVID-19)
-- [Ministério da Saúde](http://plataforma.saude.gov.br/novocoronavirus)
+- [Ministério da Saúde](http://saude.gov.br)
 
 ## Showcase 🎯
 
@@ -42,7 +42,7 @@ Fornecer uma API JSON com dados atualizados sobre o avanço do coronavírus no B
 
 ### Apps 📱
 
-- [APP COVID-19 Estatísticas 📱](https://github.com/robsonsilv4/covid19_statistics)
+- [APP COVID-19 Estatísticas](https://github.com/robsonsilv4/covid19_statistics)
 
 ## Servidor de desenvolvimento 🚀
 
