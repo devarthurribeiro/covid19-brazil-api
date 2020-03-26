@@ -1,5 +1,5 @@
 ## Crawler
-Essa é a parte de aplicação com extrai os dados de diversas fontes.
+Essa é a parte da aplicação que extrai os dados de diversas fontes.
 
 ### Servidor de desenvolvimento 🚀
 
