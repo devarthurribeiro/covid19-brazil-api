@@ -6,6 +6,10 @@
   <strong>Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil</strong>
 </p>
 
+**Chat: _[WhatsApp](https://chat.whatsapp.com/L7AY3Bpv12Y7JzjNTjbdBX), [Discord](https://discord.gg/fgs5v4)_**
+
+## Translations
+
 [English version](./README-US.md) 🇺🇸
 
 ## ⚠️ Atenção
