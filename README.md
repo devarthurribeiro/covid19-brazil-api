@@ -44,6 +44,9 @@ Fornecer uma API JSON com dados atualizados sobre o avanço do coronavírus no B
 
 - [APP COVID-19 Estatísticas](https://github.com/robsonsilv4/covid19_statistics)
 
+### Outros
+- [CLI: alertcovid19](https://github.com/renanbastos93/alertcovid19)
+
 ## Servidor de desenvolvimento 🚀
 
 Clonando o projeto:
