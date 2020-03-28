@@ -102,6 +102,14 @@ https://covid19-brazil-api.now.sh
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
 
+## Ajude o projeto 🤝
+
+<a href="https://opencollective.com/covid19-brazil-api/donate" target="_blank">
+  <img src="https://opencollective.com/corvid19-brazil-api/donate/button@2x.png?color=blue" width=300 />
+</a>
+
+[Paypal](https://www.paypal.com/donate/?token=1Ap7ElpjfDDlka5EIL6ddUbOnd1hvOmQPBO6wbFVGD7tOrQTOC7oa6yqyenGTQ9_edG70W&country.x=BR&locale.x=)
+
 ## Contribuidores
 
 <table>
