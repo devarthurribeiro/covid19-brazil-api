@@ -17,13 +17,6 @@ function getStateInfo(uf) {
 const toInt = (n) => parseInt(n.replace(/[^0-9]/g, ''), 10);
 
 const dataMaps = {
-  od: (item) => ({
-    ...getStateInfo(item.u),
-    cases: item.c || 0,
-    deaths: item.o || 0,
-    suspects: item.s || 0,
-    refuses: item.d || 0,
-  }),
   msSite: (item) => ({
     ...getStateInfo(item['1']),
     cases: toInt(item['2']) || 0,
