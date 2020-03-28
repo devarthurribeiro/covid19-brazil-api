@@ -6,6 +6,10 @@
   <strong>Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil</strong>
 </p>
 
+**Chat: _[WhatsApp](https://chat.whatsapp.com/L7AY3Bpv12Y7JzjNTjbdBX), [Discord](https://discord.gg/fgs5v4)_**
+
+## Translations
+
 [English version](./README-US.md) 🇺🇸
 
 ## ⚠️ Atenção
@@ -43,6 +47,9 @@ Fornecer uma API JSON com dados atualizados sobre o avanço do coronavírus no B
 ### Apps 📱
 
 - [APP COVID-19 Estatísticas](https://github.com/robsonsilv4/covid19_statistics)
+
+### Outros
+- [CLI: alertcovid19](https://github.com/renanbastos93/alertcovid19)
 
 ## Servidor de desenvolvimento 🚀
 
