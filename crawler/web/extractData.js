@@ -26,10 +26,10 @@ const findStateById = (uid) => R.find(R.propEq('uid', uid));
 
 function parseData(data) {
   const statesReport = R.map(mapData, cleanResult(data));
-
+  const datetime = new Date();
   const updatedReport = statesReport.map((report) => {
     const oldReport = findStateById(report.uid)(lastReport);
-    return { ...oldReport, ...report };
+    return { ...oldReport, ...report, datetime };
   });
 
   return updatedReport;
