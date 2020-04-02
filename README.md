@@ -87,7 +87,7 @@ Visite [http://localhost:3000](http://localhost:3000) com o seu navegador para v
 
 Para carregar a bandeira do estado:
 ```
-https://devarthurribeiro.github.io/covid19-brazil-api/static/{UF}.png
+https://devarthurribeiro.github.io/covid19-brazil-api/static/flags/{UF}.png
 ```
 Onde o {UF} precisa ser a sigla do estado, Exemplo: SP, RJ ou RN.
 
