@@ -7,7 +7,7 @@
     "deaths": 260,
     "suspects": 5334,
     "refuses": 596,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 33,
@@ -17,7 +17,7 @@
     "deaths": 58,
     "suspects": 1254,
     "refuses": 148,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 23,
@@ -27,7 +27,7 @@
     "deaths": 22,
     "suspects": 493,
     "refuses": 89,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 53,
@@ -37,7 +37,7 @@
     "deaths": 7,
     "suspects": 327,
     "refuses": 107,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 31,
@@ -47,7 +47,7 @@
     "deaths": 6,
     "suspects": 925,
     "refuses": 104,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 43,
@@ -57,7 +57,7 @@
     "deaths": 6,
     "suspects": 416,
     "refuses": 330,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 41,
@@ -67,7 +67,7 @@
     "deaths": 6,
     "suspects": 400,
     "refuses": 119,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 42,
@@ -77,7 +77,7 @@
     "deaths": 5,
     "suspects": 346,
     "refuses": 47,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 29,
@@ -87,7 +87,7 @@
     "deaths": 7,
     "suspects": 573,
     "refuses": 36,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 13,
@@ -97,7 +97,7 @@
     "deaths": 12,
     "suspects": 18,
     "refuses": 26,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 24,
@@ -107,7 +107,7 @@
     "deaths": 5,
     "suspects": 108,
     "refuses": 22,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 26,
@@ -117,7 +117,7 @@
     "deaths": 14,
     "suspects": 89,
     "refuses": 23,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 32,
@@ -127,7 +127,7 @@
     "deaths": 5,
     "suspects": 71,
     "refuses": 21,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 52,
@@ -137,7 +137,7 @@
     "deaths": 2,
     "suspects": 353,
     "refuses": 55,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 21,
@@ -147,7 +147,7 @@
     "deaths": 1,
     "suspects": 125,
     "refuses": 13,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 15,
@@ -157,7 +157,7 @@
     "deaths": 1,
     "suspects": 43,
     "refuses": 23,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 50,
@@ -167,17 +167,17 @@
     "deaths": 1,
     "suspects": 93,
     "refuses": 26,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 51,
     "uf": "MT",
     "state": "Mato Grosso",
     "cases": 56,
-    "deaths": 0,
+    "deaths": 1,
     "suspects": 45,
     "refuses": 8,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 12,
@@ -187,7 +187,7 @@
     "deaths": 0,
     "suspects": 12,
     "refuses": 0,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 14,
@@ -197,7 +197,7 @@
     "deaths": 1,
     "suspects": 9,
     "refuses": 0,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 25,
@@ -207,7 +207,7 @@
     "deaths": 2,
     "suspects": 85,
     "refuses": 11,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 16,
@@ -217,7 +217,7 @@
     "deaths": 1,
     "suspects": 15,
     "refuses": 0,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 28,
@@ -227,7 +227,7 @@
     "deaths": 2,
     "suspects": 15,
     "refuses": 11,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 27,
@@ -237,7 +237,7 @@
     "deaths": 2,
     "suspects": 43,
     "refuses": 22,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 22,
@@ -247,7 +247,7 @@
     "deaths": 4,
     "suspects": 12,
     "refuses": 2,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 17,
@@ -257,7 +257,7 @@
     "deaths": 0,
     "suspects": 13,
     "refuses": 0,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   },
   {
     "uid": 11,
@@ -267,6 +267,6 @@
     "deaths": 1,
     "suspects": 61,
     "refuses": 2,
-    "datetime": "2020-04-04T20:33:49.831Z"
+    "datetime": "2020-04-04T21:33:56.223Z"
   }
 ]
