@@ -35,6 +35,7 @@ Fornecer uma API JSON com dados atualizados sobre o avanço do coronavírus no B
 
 - [CSSEGISandData](https://github.com/CSSEGISandData/COVID-19)
 - [Ministério da Saúde](http://saude.gov.br)
+- [Coronavírus Brasil](https://covid.saude.gov.br/)
 
 ## Showcase 🎯
 
