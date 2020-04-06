@@ -2,30 +2,35 @@ const {
   sumStateCases,
   getValidReports,
   existsValidReport,
+  getFileName,
 } = require('.');
 
 
-describe('extract data', () => {
+describe('Test utils', () => {
   const stateReport = {
     cases: 10,
     deaths: 30,
   };
 
-  const reports = [];
+  const reports = [
+    stateReport,
+  ];
+
+  const date = new Date('2020-01-01');
 
   test('should sum sate cases', () => {
     expect(sumStateCases(stateReport)).toBe(40);
   });
 
-  test('should get valid reports', () => {
-    expect(getValidReports(reports)).toStrictEqual([]);
+  test('should return valid reports', () => {
+    expect(getValidReports([])).toStrictEqual([]);
+    expect(getValidReports([])).toHaveLength(0);
 
     reports.push([stateReport]);
-
     expect(getValidReports(reports)).toHaveLength(1);
   });
 
-  test('should get check exists reports', () => {
+  test('should check exists valid reports', () => {
     expect(() => {
       existsValidReport([]);
     }).toThrow();
@@ -36,9 +41,7 @@ describe('extract data', () => {
     }])).toEqual(expect.arrayContaining([stateReport]));
   });
 
-  test('should get check valid reports', () => {
-    expect(() => {
-      existsValidReport([]);
-    }).toThrow();
+  test('should return filename by date', () => {
+    expect(getFileName(date)).toBe('20200101.json');
   });
 });

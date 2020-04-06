@@ -8,7 +8,7 @@ async function fetchAlldata(sources) {
   const requests = sources.map((source) => {
     console.log(`request to ${source.url}`);
     return axios
-      .get(source.url)
+      .get(source.url, { headers: source.headers })
       .then(({ data }) => source.formatBody(data))
       .catch(() => []);
   });
@@ -54,6 +54,20 @@ function getMoreUpdatedReport(reports) {
   return (moreUpdated || allReports[0]);
 }
 
+const findStateById = (uid) => R.find(R.propEq('uid', uid));
+
+function mergeReports(oldReport, newReport) {
+  console.log('mergeReports');
+
+  const datetime = new Date();
+  const mergedReport = newReport.map((report) => {
+    const oldData = findStateById(report.uid)(oldReport);
+    return { ...oldData, ...report, datetime };
+  });
+
+  return mergedReport;
+}
+
 function existsValidReport(reports) {
   if (reports.length < 1) {
     throw Error('❌ Not avalible valid reports!');
@@ -78,4 +92,6 @@ module.exports = {
   existsValidReport,
   logCases,
   orderReportData,
+  mergeReports,
+  findStateById,
 };

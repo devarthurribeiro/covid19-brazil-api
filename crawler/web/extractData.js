@@ -6,6 +6,7 @@ const { convertUrl } = require('tabletojson').Tabletojson;
 
 const lastReport = require('../../data/ms/report.json');
 const mapData = require('../helpres/dataMaps').msSite;
+const { findStateById } = require('../util');
 
 const baseUrl = 'https://www.saude.gov.br';
 
@@ -19,10 +20,8 @@ const searchUrl = () => {
 };
 
 const isNotANumber = (row) => !!parseInt(row['0'], 10);
-
 // get some state report
 const cleanResult = (list) => R.filter(isNotANumber, list);
-const findStateById = (uid) => R.find(R.propEq('uid', uid));
 
 function parseData(data) {
   const statesReport = R.map(mapData, cleanResult(data));
@@ -39,12 +38,12 @@ async function searchNews() {
   const { data } = await axios.get(searchUrl());
   const urls = [];
 
-  if (data.includes('casos confirmados')) {
+  if (data.includes('casos')) {
     const $ = cheerio.load(data);
 
     $('.tileHeadline a').each(function find() {
       const url = $(this).attr('href');
-      if (url.includes('confirmados')) {
+      if (url.includes('mortes')) {
         urls.push(url);
       }
     });
