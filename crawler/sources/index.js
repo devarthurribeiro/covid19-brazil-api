@@ -9,9 +9,7 @@ const sources = [
       const report = parseData(body.results, undefined, 'msPlatform');
       // eslint-disable-next-line global-require
       const lastReport = require('../../data/ms/report.json');
-      const mergedReport = mergeReports(lastReport, report);
-      console.table(mergedReport);
-      return mergedReport;
+      return mergeReports(lastReport, report);
     },
   },
 ];
