@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-plugin-react": "^7.19.0",
     "json-2-csv": "^3.6.1",
     "micro-cors": "^0.1.1",
     "next": "9.3.2",
