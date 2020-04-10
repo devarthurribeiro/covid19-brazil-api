@@ -57,8 +57,6 @@ function getMoreUpdatedReport(reports) {
 const findStateById = (uid) => R.find(R.propEq('uid', uid));
 
 function mergeReports(oldReport, newReport) {
-  console.log('mergeReports');
-
   const datetime = new Date();
   const mergedReport = newReport.map((report) => {
     const oldData = findStateById(report.uid)(oldReport);
