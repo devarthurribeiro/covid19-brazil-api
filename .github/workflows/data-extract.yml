@@ -15,9 +15,8 @@ jobs:
           node-version: 13.x
       - run: cd crawler && npm install && node index.js
         env:
-          MS_URL: http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js
-          OD_URL: https://olhardigital.com.br/site/arquivos/json/covid19.json
-          ARCGIS_URL: https://services.arcgis.com/lqRTrQp2HrfnJt8U/arcgis/rest/services/COVID_19_VIEW/FeatureServer/0/query?f=json&where=casos_susp%3E=0&returnGeometry=false&outFields=*&outSR=102100&resultType=tile 
+          MS_URL: https://xx9p7hp1p7.execute-api.us-east-1.amazonaws.com/prod/PortalMapa
+          APPLICATION_ID: unAFkcaNDeXajurGB7LChj8SgQYS2ptm
       - uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
         with:
           add: 'data'  
