@@ -1,6 +1,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/coverage
 
 # misc
 .DS_Store
