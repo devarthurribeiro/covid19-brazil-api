@@ -25,10 +25,10 @@ function getFileName(date) {
 }
 
 async function saveReportToJson(reportData) {
-  const path = `../data/ms/${getFileName(new Date())}`;
+  const path = `../../data/ms/${getFileName(new Date())}`;
 
   fs.writeFileSync(path, JSON.stringify(reportData, 0, 2));
-  fs.copyFileSync(path, '../data/ms/report.json');
+  fs.copyFileSync(path, '../../data/ms/report.json');
 
   console.log('♻️ Updated dataset!');
 }

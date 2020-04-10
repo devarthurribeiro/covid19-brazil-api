@@ -1,0 +1,137 @@
+[
+  {
+    "uid": 35,
+    "uf": "SP",
+    "state": "São Paulo"
+  },
+  {
+    "uid": 33,
+    "uf": "RJ",
+    "state": "Rio de Janeiro"
+  },
+  {
+    "uid": 23,
+    "uf": "CE",
+    "state": "Ceará"
+  },
+  {
+    "uid": 31,
+    "uf": "MG",
+    "state": "Minas Gerais"
+  },
+  {
+    "uid": 53,
+    "uf": "DF",
+    "state": "Distrito Federal"
+  },
+  {
+    "uid": 41,
+    "uf": "PR",
+    "state": "Paraná"
+  },
+  {
+    "uid": 43,
+    "uf": "RS",
+    "state": "Rio Grande do Sul"
+  },
+  {
+    "uid": 13,
+    "uf": "AM",
+    "state": "Amazonas"
+  },
+  {
+    "uid": 29,
+    "uf": "BA",
+    "state": "Bahia"
+  },
+  {
+    "uid": 42,
+    "uf": "SC",
+    "state": "Santa Catarina"
+  },
+  {
+    "uid": 24,
+    "uf": "RN",
+    "state": "Rio Grande do Norte"
+  },
+  {
+    "uid": 26,
+    "uf": "PE",
+    "state": "Pernambuco"
+  },
+  {
+    "uid": 32,
+    "uf": "ES",
+    "state": "Espírito Santo"
+  },
+  {
+    "uid": 52,
+    "uf": "GO",
+    "state": "Goiás"
+  },
+  {
+    "uid": 21,
+    "uf": "MA",
+    "state": "Maranhão"
+  },
+  {
+    "uid": 15,
+    "uf": "PA",
+    "state": "Pará"
+  },
+  {
+    "uid": 50,
+    "uf": "MS",
+    "state": "Mato Grosso do Sul"
+  },
+  {
+    "uid": 51,
+    "uf": "MT",
+    "state": "Mato Grosso"
+  },
+  {
+    "uid": 12,
+    "uf": "AC",
+    "state": "Acre"
+  },
+  {
+    "uid": 14,
+    "uf": "RR",
+    "state": "Roraima"
+  },
+  {
+    "uid": 25,
+    "uf": "PB",
+    "state": "Paraíba"
+  },
+  {
+    "uid": 28,
+    "uf": "SE",
+    "state": "Sergipe"
+  },
+  {
+    "uid": 16,
+    "uf": "AP",
+    "state": "Amapá"
+  },
+  {
+    "uid": 27,
+    "uf": "AL",
+    "state": "Alagoas"
+  },
+  {
+    "uid": 22,
+    "uf": "PI",
+    "state": "Piauí"
+  },
+  {
+    "uid": 17,
+    "uf": "TO",
+    "state": "Tocantins"
+  },
+  {
+    "uid": 11,
+    "uf": "RO",
+    "state": "Rondônia"
+  }
+]

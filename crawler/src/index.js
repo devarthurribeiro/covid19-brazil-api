@@ -12,7 +12,7 @@ const {
 } = require('./util');
 
 const sources = require('./sources');
-const lastReportTotalCase = sumTotalCases(require('../data/ms/report.json'));
+const lastReportTotalCase = sumTotalCases(require('../../data/ms/report.json'));
 
 const isMoreUpdated = (newReport) => (newReport.totalCases > lastReportTotalCase);
 

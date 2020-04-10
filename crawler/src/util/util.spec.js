@@ -18,19 +18,17 @@ describe('Test utils', () => {
 
   const date = new Date('2020-01-01');
 
-  test('should sum sate cases', () => {
+  it('should sum sate cases', () => {
     expect(sumStateCases(stateReport)).toBe(40);
   });
 
-  test('should return valid reports', () => {
+  it('should return valid reports', () => {
     expect(getValidReports([])).toStrictEqual([]);
-    expect(getValidReports([])).toHaveLength(0);
-
     reports.push([stateReport]);
     expect(getValidReports(reports)).toHaveLength(1);
   });
 
-  test('should check exists valid reports', () => {
+  it('should check exists valid reports', () => {
     expect(() => {
       existsValidReport([]);
     }).toThrow();
@@ -41,7 +39,7 @@ describe('Test utils', () => {
     }])).toEqual(expect.arrayContaining([stateReport]));
   });
 
-  test('should return filename by date', () => {
+  it('should return filename by date', () => {
     expect(getFileName(date)).toBe('20200101.json');
   });
 });

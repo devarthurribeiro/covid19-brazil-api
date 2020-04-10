@@ -8,7 +8,7 @@ const sources = [
     formatBody: (body) => {
       const report = parseData(body.results, undefined, 'msPlatform');
       // eslint-disable-next-line global-require
-      const lastReport = require('../../data/ms/report.json');
+      const lastReport = require('../../../data/ms/report.json');
       return mergeReports(lastReport, report);
     },
   },

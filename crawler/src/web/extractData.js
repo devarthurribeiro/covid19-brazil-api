@@ -4,9 +4,10 @@ const cheerio = require('cheerio');
 
 const { convertUrl } = require('tabletojson').Tabletojson;
 
-const lastReport = require('../../data/ms/report.json');
+const lastReport = require('../../../data/ms/report.json');
 const mapData = require('../helpres/dataMaps').msSite;
-const { findStateById } = require('../util');
+
+const findStateById = (uid) => R.find(R.propEq('uid', uid));
 
 const baseUrl = 'https://www.saude.gov.br';
 
