@@ -13,7 +13,7 @@ async function fetchAlldata(sources) {
       .catch(() => []);
   });
   try {
-    return await Promise.all([...requests, extractData()]);
+    return await Promise.all([...requests]);
   } catch (error) {
     throw new Error('requests_error');
   }
