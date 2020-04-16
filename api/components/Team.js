@@ -9,7 +9,7 @@ import Person from './Person';
 function Team() {
   return (
     <div className="grid team">
-      {team.map((person) => (<Person person={person} />))}
+      {team.map((person) => (<Person key={person.name} person={person} />))}
       <Card>
         <div className="flex-center">
           <div>
