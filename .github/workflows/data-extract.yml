@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 13.x
-      - run: cd crawler && npm install && node index.js
+      - run: cd crawler && npm install && npm start
         env:
           MS_URL: https://xx9p7hp1p7.execute-api.us-east-1.amazonaws.com/prod/PortalMapa
           APPLICATION_ID: unAFkcaNDeXajurGB7LChj8SgQYS2ptm
