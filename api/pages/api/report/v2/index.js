@@ -1,5 +1,5 @@
 import microCors from 'micro-cors';
-import axios from 'axios';
+import fetchData from '../../../../util/fetchData';
 
 const cors = microCors();
 

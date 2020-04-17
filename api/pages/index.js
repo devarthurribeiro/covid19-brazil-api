@@ -15,7 +15,6 @@ function Home() {
 
   return (
     <Layout className="container">
-
       <NavBar />
       <p className="description">
         Notificação de casos de doença pelo coronavírus 2019 (COVID-19) no Brasil e mundo.
