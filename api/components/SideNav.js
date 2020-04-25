@@ -20,11 +20,6 @@ const SideNav = () => (
           <i className="material-icons">home</i>
         </a>
       </Link>
-      <Link href="/graphics">
-        <a data-tip="Graphics">
-          <i className="material-icons">public</i>
-        </a>
-      </Link>
       <Link href="/status">
         <a data-tip="Acompanhe">
           <i className="material-icons">insert_chart</i>
