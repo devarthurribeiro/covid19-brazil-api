@@ -1,15 +1,13 @@
 const states = require('./states');
 
 function getStateInfo(uf) {
-  console.log(uf);
-
   let state = {};
   Object.keys(states.objectIds).forEach((key) => {
     if (key === `${uf}`.toUpperCase()) {
       state = {
         uid: states.codes[key],
         uf: key,
-        state: states.names[key],
+        state: states.names[states.codes[key]],
       };
     }
   });
