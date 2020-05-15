@@ -1,12 +1,14 @@
 const states = require('./states');
 
 function getStateInfo(uf) {
+  console.log(uf);
+
   let state = {};
-  Object.keys(states.codes).forEach((key) => {
-    if (states.codes[key] === `${uf}`.toUpperCase()) {
+  Object.keys(states.objectIds).forEach((key) => {
+    if (key === `${uf}`.toUpperCase()) {
       state = {
-        uid: parseInt(key, 10),
-        uf: states.codes[key],
+        uid: states.codes[key],
+        uf: key,
         state: states.names[key],
       };
     }
@@ -23,9 +25,9 @@ const dataMaps = {
     deaths: toInt(item['3']) || 0,
   }),
   msPlatform: (item) => ({
-    ...getStateInfo(states.objectIds[item.objectId]),
-    cases: item.qtd_confirmado || 0,
-    deaths: item.qtd_obito || 0,
+    ...getStateInfo(item.nome),
+    cases: item.casosAcumulado || 0,
+    deaths: item.obitosAcumulado || 0,
   }),
 };
 
