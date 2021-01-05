@@ -10,7 +10,7 @@
     "lint:fix": "eslint . --ext .js --fix"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "chart.js": "^2.9.3",
     "json-2-csv": "^3.6.1",
     "micro-cors": "^0.1.1",
