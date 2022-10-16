@@ -10,7 +10,7 @@ const Person = ({ person }) => (
   <Card className="person">
     <div className="person">
       <a href="https://github.com/devarthurribeiro">
-        <img src={person.img} alt="Arthur Ribeiro" />
+        <img src={person.img} width="160" height="160"  alt="Arthur Ribeiro" />
       </a>
       <h3>{person.name}</h3>
       <span>{person.role}</span>
