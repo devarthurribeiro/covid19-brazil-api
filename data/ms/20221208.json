@@ -3,131 +3,131 @@
     "uid": 35,
     "uf": "SP",
     "state": "São Paulo",
-    "cases": 6204502,
-    "deaths": 176417,
+    "cases": 6221071,
+    "deaths": 176563,
     "suspects": 5334,
     "refuses": 596,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 31,
     "uf": "MG",
     "state": "Minas Gerais",
-    "cases": 3939479,
-    "deaths": 64007,
+    "cases": 3952942,
+    "deaths": 64038,
     "suspects": 925,
     "refuses": 104,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 41,
     "uf": "PR",
     "state": "Paraná",
-    "cases": 2788149,
-    "deaths": 45524,
+    "cases": 2798527,
+    "deaths": 45556,
     "suspects": 400,
     "refuses": 119,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 43,
     "uf": "RS",
     "state": "Rio Grande do Sul",
-    "cases": 2781326,
-    "deaths": 41288,
+    "cases": 2789701,
+    "deaths": 41305,
     "suspects": 416,
     "refuses": 330,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 33,
     "uf": "RJ",
     "state": "Rio de Janeiro",
-    "cases": 2648331,
-    "deaths": 76161,
+    "cases": 2660936,
+    "deaths": 76206,
     "suspects": 1254,
     "refuses": 148,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 42,
     "uf": "SC",
     "state": "Santa Catarina",
-    "cases": 1915180,
-    "deaths": 22469,
+    "cases": 1923035,
+    "deaths": 22486,
     "suspects": 346,
     "refuses": 47,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 52,
     "uf": "GO",
     "state": "Goiás",
-    "cases": 1746613,
-    "deaths": 27637,
+    "cases": 1754289,
+    "deaths": 27650,
     "suspects": 353,
     "refuses": 55,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 29,
     "uf": "BA",
     "state": "Bahia",
-    "cases": 1727338,
-    "deaths": 30879,
+    "cases": 1732712,
+    "deaths": 30918,
     "suspects": 573,
     "refuses": 36,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 23,
     "uf": "CE",
     "state": "Ceará",
-    "cases": 1407686,
-    "deaths": 28020,
+    "cases": 1415111,
+    "deaths": 28035,
     "suspects": 493,
     "refuses": 89,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 32,
     "uf": "ES",
     "state": "Espírito Santo",
-    "cases": 1255157,
-    "deaths": 14859,
+    "cases": 1269104,
+    "deaths": 14873,
     "suspects": 71,
     "refuses": 21,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 26,
     "uf": "PE",
     "state": "Pernambuco",
-    "cases": 1089123,
-    "deaths": 22482,
+    "cases": 1095084,
+    "deaths": 22496,
     "suspects": 89,
     "refuses": 23,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 53,
     "uf": "DF",
     "state": "Distrito Federal",
-    "cases": 857077,
+    "cases": 864274,
     "deaths": 11835,
     "suspects": 327,
     "refuses": 107,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 15,
     "uf": "PA",
     "state": "Pará",
-    "cases": 853161,
-    "deaths": 18928,
+    "cases": 854935,
+    "deaths": 18934,
     "suspects": 43,
     "refuses": 23,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 51,
@@ -137,87 +137,87 @@
     "deaths": 14967,
     "suspects": 45,
     "refuses": 8,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 25,
     "uf": "PB",
     "state": "Paraíba",
-    "cases": 678307,
-    "deaths": 10465,
+    "cases": 682458,
+    "deaths": 10474,
     "suspects": 85,
     "refuses": 11,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 13,
     "uf": "AM",
     "state": "Amazonas",
-    "cases": 623905,
-    "deaths": 14402,
+    "cases": 624146,
+    "deaths": 14405,
     "suspects": 18,
     "refuses": 26,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 50,
     "uf": "MS",
     "state": "Mato Grosso do Sul",
-    "cases": 584820,
-    "deaths": 10855,
+    "cases": 586167,
+    "deaths": 10862,
     "suspects": 93,
     "refuses": 26,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 24,
     "uf": "RN",
     "state": "Rio Grande do Norte",
-    "cases": 568512,
-    "deaths": 8504,
+    "cases": 572471,
+    "deaths": 8511,
     "suspects": 108,
     "refuses": 22,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 21,
     "uf": "MA",
     "state": "Maranhão",
-    "cases": 483414,
-    "deaths": 11008,
+    "cases": 484466,
+    "deaths": 11012,
     "suspects": 125,
     "refuses": 13,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 11,
     "uf": "RO",
     "state": "Rondônia",
-    "cases": 460031,
-    "deaths": 7368,
+    "cases": 461259,
+    "deaths": 7375,
     "suspects": 61,
     "refuses": 2,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 22,
     "uf": "PI",
     "state": "Piauí",
-    "cases": 405723,
-    "deaths": 7969,
+    "cases": 406778,
+    "deaths": 7979,
     "suspects": 12,
     "refuses": 2,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 28,
     "uf": "SE",
     "state": "Sergipe",
-    "cases": 351175,
-    "deaths": 6457,
+    "cases": 352449,
+    "deaths": 6463,
     "suspects": 15,
     "refuses": 11,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 17,
@@ -227,46 +227,46 @@
     "deaths": 4208,
     "suspects": 13,
     "refuses": 0,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 27,
     "uf": "AL",
     "state": "Alagoas",
-    "cases": 326350,
-    "deaths": 7146,
+    "cases": 327581,
+    "deaths": 7152,
     "suspects": 43,
     "refuses": 22,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 16,
     "uf": "AP",
     "state": "Amapá",
-    "cases": 181766,
+    "cases": 182001,
     "deaths": 2165,
     "suspects": 15,
     "refuses": 0,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 14,
     "uf": "RR",
     "state": "Roraima",
-    "cases": 179669,
+    "cases": 180084,
     "deaths": 2177,
     "suspects": 9,
     "refuses": 0,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   },
   {
     "uid": 12,
     "uf": "AC",
     "state": "Acre",
-    "cases": 154736,
+    "cases": 155474,
     "deaths": 2032,
     "suspects": 12,
     "refuses": 0,
-    "datetime": "2022-12-08T20:33:48.241Z"
+    "datetime": "2022-12-08T21:33:43.407Z"
   }
 ]
